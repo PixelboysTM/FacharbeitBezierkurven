@@ -1,0 +1,9 @@
+[book]
+authors = ["Pixelboys_TM"]
+language = "de"
+multilingual = false
+src = "src"
+title = "Die Kunst, Bezierkurven auf nicht iterative Weise zu berechnen"
+
+[output.html]
+mathjax-support = true
