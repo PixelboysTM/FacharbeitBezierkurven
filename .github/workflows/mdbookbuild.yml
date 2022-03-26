@@ -3,7 +3,7 @@ name: github pages md book build
 on:
   push:
     branches:
-      - main
+      - mster
   pull_request:
 
 jobs:
