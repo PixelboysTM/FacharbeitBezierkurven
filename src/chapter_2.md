@@ -57,7 +57,7 @@ Oder mit Punkten:
 
 $$ lerp3(t) = lerp(\color{yellow}{lerp(P_{0},P_{1},t)},\color{red}{lerp(P_{1},P_{2},t)},t) $$
 
-Was man auschreiben kann als:
+Was man auschreiben kann als: 
 
 $$ lerp3(t) = (1-t)\color{yellow}{((1-t)P_{0} + tP_{1})} + t\color{red}{((1-t)P_{1} + tP_{2})} $$
 
