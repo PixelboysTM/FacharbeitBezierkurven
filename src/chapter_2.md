@@ -68,7 +68,7 @@ Veranschaulicht gibt dies folgenden Verlauf:
 
 Das zeigt sich auch in der allgemeinen Form des Grades drei:
 
-$$ B_{2}(t) = \sum_{i=0}^{2} \frac{2!}{i! (2 - i)!} (1-t)^{2-i} t^i P_{i} $$
+$$ B_{3}(t) = \sum_{i=0}^{2} \frac{2!}{i! (2 - i)!} (1-t)^{2-i} t^i P_{i} $$
 
 $$ = [\frac{2!}{0! (2 - 0)!} (1-t)^{2-0} t^0 P_{0}] + [\frac{2!}{1! (2 - 1)!} (1-t)^{2-1} t^1 P_{1}] + [\frac{2!}{2! (2 - 2)!} (1-t)^{2-2} t^2 P_{2}]$$
 

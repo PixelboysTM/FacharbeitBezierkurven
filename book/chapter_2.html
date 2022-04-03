@@ -190,7 +190,7 @@ Point lerp(Point a, Point b, float t); // Implementation not included
 <p><img src="./img/QuadraticBezierAnimatedT.png" alt="ezierkurve mit drei Kontrollpunkten abhängig von t" /></p>
 <p style="text-align: center; font-size: 1.6rem;">Demo 2.1.2 Bezierkurve mit drei Kontrollpunkten abhängig von t (QuadraticBezierAnimatedT)</p>
 <p>Das zeigt sich auch in der allgemeinen Form des Grades drei:</p>
-<p>$$ B_{2}(t) = \sum_{i=0}^{2} \frac{2!}{i! (2 - i)!} (1-t)^{2-i} t^i P_{i} $$</p>
+<p>$$ B_{3}(t) = \sum_{i=0}^{2} \frac{2!}{i! (2 - i)!} (1-t)^{2-i} t^i P_{i} $$</p>
 <p>$$ = [\frac{2!}{0! (2 - 0)!} (1-t)^{2-0} t^0 P_{0}] + [\frac{2!}{1! (2 - 1)!} (1-t)^{2-1} t^1 P_{1}] + [\frac{2!}{2! (2 - 2)!} (1-t)^{2-2} t^2 P_{2}]$$</p>
 <p>$$ = (1-t)^2P_{0} + 2(1-t)tP_{1} + t^2P_{2} $$</p>
 <p>$$ = (1-t)^2P_{0} + (1-t)tP_{1} + (1-t)tP_{1} + t^2P_{2} $$</p>

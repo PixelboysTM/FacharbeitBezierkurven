@@ -1,1 +1,67 @@
 ### 3.3 Mathematischer Lösungsansatz
+
+Der Mathematische Lösungsweg wird im folgenden für eine beliebige Bezierkurve dritten Grades gezeigt, die meisten der gezeigten Eigenschaften lassen sich jedoch auf Bezierkurven mit einem anderen Grad übertragen.
+
+Als Ausgangsgleichung ziehen wir also die zuvor in [2.1.2](../chapter_2.md) hergeleitete Gleichung:
+
+$$ B_{3}(t) = (1-t)^2P_{0} + 2(1-t)tP_{1} + t^2P_{2} $$
+
+Da \\(P_{0}\\) - \\(P_{2}\\) Punkte mit jeweils einer \\(x\\) und \\(y\\) sind lässt sich die obige Gleichung unterteilen in eine für \\(x\\) und eine für \\(y\\):
+
+$$ B_{x3}(t) = (1-t)^2x_{0} + 2(1-t)tx_{1} + t^2x_{2} $$
+$$ B_{y3}(t) = (1-t)^2y_{0} + 2(1-t)ty_{1} + t^2y_{2} $$
+
+Nehmen wir Besipielsweise die Punkte \\(P_{0} = (2,1), P_{1} = (3,3), P_{2} = (5,2) \\), so sieht die dazugehörige Bezierkurve wiefolgt aus:
+
+![Bezierkurve mit Fixen Punkten](./../img/MathematischerAnsatzBeispielkurveRaw.png)
+<p style="text-align: center; font-size: 1.6rem;">Bild 3.3.1 Bezierkurve mit festen Punkten</p>
+
+Die dazugehörigen Graphen von \\(x\\) und \\(y\\) sind:
+
+![Bezierkurve Einzelgleichungen](../img/MathematischerAnsatzBeispielkurveRawEinzelgleichungen.png)
+<p style="text-align: center; font-size: 1.6rem;">Bild 3.3.2 Einzelgleichungen der Bezierkurve; x oben, y unten</p>
+
+Bei genaurer betrachtung einzelner Punkte bzw. einzelner \\(t\\), so lässt sich erkennen, dass alle Punkte auf \\(B_{3}(t)\\), die gleiche \\(x\\) Koordinate in den Einzelgleichungen haben, und somit untereinander liegen.
+
+![Gleiche x Koordinate für t](../img/MathematischerAnsatzBeispielkurveGleichesXF%C3%BCrWahrT.png)
+<p style="text-align: center; font-size: 1.6rem;">Bild 3.3.3 Gleiche x Koordinate für t auf der Bezierkurve</p>
+
+
+
+<style>
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+
+pages
+
+$$ (1-t)^2P_{0} + 2(1-t)tP_{1} + t^2P_{2} = T $$
+
+$$ (1-t)^2P_{0} + 2(1-t)tP_{1} + t^2P_{2} - T = 0 $$
+
+$$ (1-t)(1-t) P_{0} + 2(1-t)tP_{1} + t^2P_{2} - T = 0 $$
+
+$$ (1-2t+t^2) P_{0} + 2(1-t)tP_{1} + t^2P_{2} - T = 0 $$
+
+$$ P_{0}-2tP_{0}+P_{0}t^2 + 2(1-t)tP_{1} + t^2P_{2} - T = 0 $$
+
+$$ P_{0}-2tP_{0}+P_{0}t^2 + (2-2t)tP_{1} + t^2P_{2} - T = 0 $$
+
+$$ P_{0}-2tP_{0}+P_{0}t^2 + (2t-2t^2)P_{1} + t^2P_{2} - T = 0 $$
+
+$$ P_{0}-2tP_{0}+P_{0}t^2 + 2tP_{1}-2t^2P_{1} + t^2P_{2} - T = 0 $$
+
+$$ P_{0} - T - 2tP_{0} + 2tP_{1} + P_{0}t^2 - 2t^2P_{1} + t^2P_{2}  = 0 $$
+
+$$ P_{0} - T + 2tP_{1} - 2tP_{0} + P_{0}t^2 - 2t^2P_{1} + t^2P_{2}  = 0 $$
+
+$$ P_{0} - T + t(2P_{1} - 2P_{0}) + t^2(P_{0} - 2P_{1} + P_{2})  = 0 $$
+
+$$ t^2(P_{0} - 2P_{1} + P_{2}) + t(2P_{1} - 2P_{0}) + P_{0} - T +  = 0 $$
+
+$$ x_{1,2} = \frac{-(2P_{1} - 2P_{0}) \pm \sqrt{(2P_{1} - 2P_{0})^2 - 4(P_{0} - 2P_{1} + P_{2})(P_{0} - T)}}{2(P_{0} - 2P_{1} + P_{2})} $$
+
+<iframe style="width: 800px; height: 650px;" src="https://www.desmos.com/calculator/8noxj4otbk?embed"></iframe>

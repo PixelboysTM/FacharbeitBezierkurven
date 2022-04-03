@@ -245,7 +245,7 @@ Point lerp(Point a, Point b, float t); // Implementation not included
 <p><img src="./img/QuadraticBezierAnimatedT.png" alt="ezierkurve mit drei Kontrollpunkten abhängig von t" /></p>
 <p style="text-align: center; font-size: 1.6rem;">Demo 2.1.2 Bezierkurve mit drei Kontrollpunkten abhängig von t (QuadraticBezierAnimatedT)</p>
 <p>Das zeigt sich auch in der allgemeinen Form des Grades drei:</p>
-<p>$$ B_{2}(t) = \sum_{i=0}^{2} \frac{2!}{i! (2 - i)!} (1-t)^{2-i} t^i P_{i} $$</p>
+<p>$$ B_{3}(t) = \sum_{i=0}^{2} \frac{2!}{i! (2 - i)!} (1-t)^{2-i} t^i P_{i} $$</p>
 <p>$$ = [\frac{2!}{0! (2 - 0)!} (1-t)^{2-0} t^0 P_{0}] + [\frac{2!}{1! (2 - 1)!} (1-t)^{2-1} t^1 P_{1}] + [\frac{2!}{2! (2 - 2)!} (1-t)^{2-2} t^2 P_{2}]$$</p>
 <p>$$ = (1-t)^2P_{0} + 2(1-t)tP_{1} + t^2P_{2} $$</p>
 <p>$$ = (1-t)^2P_{0} + (1-t)tP_{1} + (1-t)tP_{1} + t^2P_{2} $$</p>
@@ -403,7 +403,43 @@ void main()
 <p>Bei näherer Betrachtung dieser Methode unter Berücksichtigung der Funktionsweise moderner Grafikkarten und dem damit einhergehenden Leitfaden zur Vermeidung von Kontrollstrukturen und Iteration sowie Rekursion und der größtmöglichen Beschränkung auf mathematische Rechnungen, zeigt sich auch in der Praxis, dass der hier gewählte Ansatz schon bei einzelnen Kurven eine erhebliche Menge an Recheneistung benötigt und schon bei wenigen Kurven pro Frame nicht mehr realistisch verwendbar ist. Auch bleibt die Ungenauigkeit des De Casteljau Algorithmus erhalten.</p>
 <p>Ein realistischer Lösungansatz zur exakten Berechnung und Zeichnung von Bezierkurven soll im folgenden erarbeitet werden. Um dies zu erzielen soll durch das Lösen von Funktionsgleichungen die Bestimmung ob ein Pixel \(P\) auf \(B(t)\) liegt mathematisch und ohne rekursiven Aufruf erfolgen, um so die Grafikkarte optimal zu nutzen und Effizient eine vielzahl verschiedener Bezierkuven zu zeichnen.</p>
 <div style="break-before: page; page-break-before: always;"></div><h3 id="33-mathematischer-lösungsansatz"><a class="header" href="#33-mathematischer-lösungsansatz">3.3 Mathematischer Lösungsansatz</a></h3>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="zussamenfassung"><a class="header" href="#zussamenfassung">Zussamenfassung</a></h1>
+<p>Der Mathematische Lösungsweg wird im folgenden für eine beliebige Bezierkurve dritten Grades gezeigt, die meisten der gezeigten Eigenschaften lassen sich jedoch auf Bezierkurven mit einem anderen Grad übertragen.</p>
+<p>Als Ausgangsgleichung ziehen wir also die zuvor in <a href="chapter_3/../chapter_2.html">2.1.2</a> hergeleitete Gleichung:</p>
+<p>$$ B_{3}(t) = (1-t)^2P_{0} + 2(1-t)tP_{1} + t^2P_{2} $$</p>
+<p>Da \(P_{0}\) - \(P_{2}\) Punkte mit jeweils einer \(x\) und \(y\) sind lässt sich die obige Gleichung unterteilen in eine für \(x\) und eine für \(y\):</p>
+<p>$$ B_{x3}(t) = (1-t)^2x_{0} + 2(1-t)tx_{1} + t^2x_{2} $$
+$$ B_{y3}(t) = (1-t)^2y_{0} + 2(1-t)ty_{1} + t^2y_{2} $$</p>
+<p>Nehmen wir Besipielsweise die Punkte \(P_{0} = (2,1), P_{1} = (3,3), P_{2} = (5,2) \), so sieht die dazugehörige Bezierkurve wiefolgt aus:</p>
+<p><img src="chapter_3/./../img/MathematischerAnsatzBeispielkurveRaw.png" alt="Bezierkurve mit Fixen Punkten" /></p>
+<p style="text-align: center; font-size: 1.6rem;">Bild 3.3.1 Bezierkurve mit festen Punkten</p>
+<p>Die dazugehörigen Graphen von \(x\) und \(y\) sind:</p>
+<p><img src="chapter_3/../img/MathematischerAnsatzBeispielkurveRawEinzelgleichungen.png" alt="Bezierkurve Einzelgleichungen" /></p>
+<p style="text-align: center; font-size: 1.6rem;">Bild 3.3.2 Einzelgleichungen der Bezierkurve; x oben, y unten</p>
+<p>Bei genaurer betrachtung einzelner Punkte bzw. einzelner \(t\), so lässt sich erkennen, dass alle Punkte auf \(B_{3}(t)\), die gleiche \(x\) Koordinate in den Einzelgleichungen haben, und somit untereinander liegen.</p>
+<p><img src="chapter_3/../img/MathematischerAnsatzBeispielkurveGleichesXF%C3%BCrWahrT.png" alt="Gleiche x Koordinate für t" /></p>
+<p style="text-align: center; font-size: 1.6rem;">Bild 3.3.3 Gleiche x Koordinate für t auf der Bezierkurve</p>
+<style>
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+<p>pages</p>
+<p>$$ (1-t)^2P_{0} + 2(1-t)tP_{1} + t^2P_{2} = T $$</p>
+<p>$$ (1-t)^2P_{0} + 2(1-t)tP_{1} + t^2P_{2} - T = 0 $$</p>
+<p>$$ (1-t)(1-t) P_{0} + 2(1-t)tP_{1} + t^2P_{2} - T = 0 $$</p>
+<p>$$ (1-2t+t^2) P_{0} + 2(1-t)tP_{1} + t^2P_{2} - T = 0 $$</p>
+<p>$$ P_{0}-2tP_{0}+P_{0}t^2 + 2(1-t)tP_{1} + t^2P_{2} - T = 0 $$</p>
+<p>$$ P_{0}-2tP_{0}+P_{0}t^2 + (2-2t)tP_{1} + t^2P_{2} - T = 0 $$</p>
+<p>$$ P_{0}-2tP_{0}+P_{0}t^2 + (2t-2t^2)P_{1} + t^2P_{2} - T = 0 $$</p>
+<p>$$ P_{0}-2tP_{0}+P_{0}t^2 + 2tP_{1}-2t^2P_{1} + t^2P_{2} - T = 0 $$</p>
+<p>$$ P_{0} - T - 2tP_{0} + 2tP_{1} + P_{0}t^2 - 2t^2P_{1} + t^2P_{2}  = 0 $$</p>
+<p>$$ P_{0} - T + 2tP_{1} - 2tP_{0} + P_{0}t^2 - 2t^2P_{1} + t^2P_{2}  = 0 $$</p>
+<p>$$ P_{0} - T + t(2P_{1} - 2P_{0}) + t^2(P_{0} - 2P_{1} + P_{2})  = 0 $$</p>
+<p>$$ t^2(P_{0} - 2P_{1} + P_{2}) + t(2P_{1} - 2P_{0}) + P_{0} - T +  = 0 $$</p>
+<p>$$ x_{1,2} = \frac{-(2P_{1} - 2P_{0}) \pm \sqrt{(2P_{1} - 2P_{0})^2 - 4(P_{0} - 2P_{1} + P_{2})(P_{0} - T)}}{2(P_{0} - 2P_{1} + P_{2})} $$</p>
+<iframe style="width: 800px; height: 650px;" src="https://www.desmos.com/calculator/8noxj4otbk?embed"></iframe><div style="break-before: page; page-break-before: always;"></div><h1 id="zussamenfassung"><a class="header" href="#zussamenfassung">Zussamenfassung</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="anhang"><a class="header" href="#anhang">Anhang</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><p>A1 http://solidmodeling.org/awards/bezier-award/ [05.03.2022 14:22]</p>
 <p>A2 https://archive.ph/20120526012617/http://www.engology.com/eng5bezier.htm#selection-19.206-19.309 [05.03.2022 14:29]</p>
