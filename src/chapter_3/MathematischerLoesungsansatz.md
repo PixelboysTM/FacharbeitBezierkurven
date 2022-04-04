@@ -26,19 +26,9 @@ Bei genaurer betrachtung einzelner Punkte bzw. einzelner \\(t\\), so lässt sich
 ![Gleiche x Koordinate für t](../img/MathematischerAnsatzBeispielkurveGleichesXF%C3%BCrWahrT.png)
 <p style="text-align: center; font-size: 1.6rem;">Bild 3.3.3 Gleiche x Koordinate für t auf der Bezierkurve</p>
 
+Setzten wir nun \\(B(t) = T\\), wobei \\(T\\) ein beliebiger Punkt ist, für den wir Testen ob er auf \\(B(t)\\) liegt, können wir die Gleichung wie folgt für \\(t\\) lösen:
 
-
-<style>
-    img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-</style>
-
-pages
-
-$$ (1-t)^2P_{0} + 2(1-t)tP_{1} + t^2P_{2} = T $$
+$$ B(t) = (1-t)^2P_{0} + 2(1-t)tP_{1} + t^2P_{2} = T $$
 
 $$ (1-t)^2P_{0} + 2(1-t)tP_{1} + t^2P_{2} - T = 0 $$
 
@@ -62,6 +52,20 @@ $$ P_{0} - T + t(2P_{1} - 2P_{0}) + t^2(P_{0} - 2P_{1} + P_{2})  = 0 $$
 
 $$ t^2(P_{0} - 2P_{1} + P_{2}) + t(2P_{1} - 2P_{0}) + P_{0} - T +  = 0 $$
 
-$$ x_{1,2} = \frac{-(2P_{1} - 2P_{0}) \pm \sqrt{(2P_{1} - 2P_{0})^2 - 4(P_{0} - 2P_{1} + P_{2})(P_{0} - T)}}{2(P_{0} - 2P_{1} + P_{2})} $$
+Mit Hilfe der Mitternachtsformel können wir nun die Gleichung in, welche nun die Form \\(a x^2 + b x + c = 0\\) besitzt lösen:
 
-<iframe style="width: 800px; height: 650px;" src="https://www.desmos.com/calculator/8noxj4otbk?embed"></iframe>
+$$ t_{1,2} = \frac{-(2P_{1} - 2P_{0}) \pm \sqrt{(2P_{1} - 2P_{0})^2 - 4(P_{0} - 2P_{1} + P_{2})(P_{0} - T)}}{2(P_{0} - 2P_{1} + P_{2})} $$
+
+Für die \\(x\\) und \\(y\\) Komponenete ergeben sich somit insgesamt zwischen 0 und 4 Lösungen \\(\\{t_{x1},t_{x2},t_{y1},t_{y2}\\}\\)
+Sind jetzt ein t von x und ein t von y gleich, so liegt \\(T\\) auf der Kurve. Die kleinste Differenz von x und y gibt also die Nähe des Punktes zur Kurve an.
+
+![alt](../img/MathematischerAnsatzBeispielkurveTestpunkt.png)
+<p style="text-align: center; font-size: 1.6rem;">Demo 3.3.1 Testpunkt Nähe zur Kurve{A18}</p>
+
+<style>
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>

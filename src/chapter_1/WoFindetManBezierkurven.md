@@ -33,3 +33,11 @@ Was viele nicht wissen, auch bei Schriftarten kommen Bezierkurven zum Einsatz. D
 ![Font Rasterization](https://docs.microsoft.com/en-us/typography/truetype/images/rast-image27.gif)
 <p style="text-align: center; font-size: 1.6rem;">Bild 1.2.6 Font Rasterization{A11}</p>
 
+
+<style>
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>

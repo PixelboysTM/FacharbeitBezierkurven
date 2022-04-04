@@ -32,6 +32,8 @@ A16 https://www.microsoft.com/en-us/microsoft-365/word [13.03.2022 19:19]
 
 A17 https://helpx.adobe.com/photoshop-elements/key-concepts/aliasing-anti-aliasing.html [26.03.2022 11:19]
 
+A18 https://www.desmos.com/calculator/4sabernbxy [04.04.2022 17:32]
+
 #### Code:
 
 L1 http://www.jeffreythompson.org/collision-detection/point-circle.php [12.03.2022 13:18]
