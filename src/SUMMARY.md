@@ -4,7 +4,7 @@
 
 ---
 
-- [Einführung](./chapter_1.md)
+- [Einführung](./chapter_1/WasSindBezierkurven.md)
   - [Was sind Bezierkurven](./chapter_1/WasSindBezierkurven.md)
   - [Wo findet man Bezierkurven](chapter_1/WoFindetManBezierkurven.md)
 - [Zeichnen von Bezierkurven](./chapter_2.md)
