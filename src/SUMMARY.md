@@ -8,11 +8,10 @@
   - [Was sind Bezierkurven](./chapter_1/WasSindBezierkurven.md)
   - [Wo findet man Bezierkurven](chapter_1/WoFindetManBezierkurven.md)
 - [Zeichnen von Bezierkurven](./chapter_2.md)
-- [Anwendung von bezierkurven beim Erstellen von Software](chapter_3.md)
+- [Anwendung von bezierkurven beim Erstellen von Software](chapter_3/Anwendung.md)
   - [Anwendung](chapter_3/Anwendung.md)
   - [Ineffizienz und Schwierigkeiten in der Praxis](chapter_3/IneffizienzUndSchwierigkeitenInDerPraxis.md)
   - [Mathematischer Lösungsansatz](chapter_3/MathematischerLoesungsansatz.md)
-  - [Praktische Implementierung (beweis durch Shader)](chapter_3/PraktischeImplementierung.md)
 - [Zussamenfassung](./chapter_4.md)
 
 ---
