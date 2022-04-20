@@ -3,11 +3,11 @@
 Beim vorangegangenen Ansatz aus [3.1](./Anwendung.md) wird die gesamte Arbeit der Bestimmung der Bezierkurve auf Seiten der CPU im vornerein berechnet und die Grafikkarte ausgehebelt, indem nur noch Linien gezeichnet werden. Dieses Vorgehen ist ungenau, da der Casteljau Algorithmus nur eine Annäherung der Kurve berechnet. Dies zeigt sich insbesondere an den Ecken der Kurven, welche auf Grund der ungleichen Verteilung der von \\(t\\) abhängigen Punkte auf der Kurve sehr harte Stufenübergänge erhalten. 
 
 ![Ecken ungenauigkeit bei Bezierkurven](../img/RailwayEdgeDistortion.png)
-<p style="text-align: center; font-size: 1.6rem;">Bild 3.2.1 Ecken ungenauigkeit bei Bezierkurven</p>
+<p style="text-align: center; font-size: 1.6rem;">Bild 3.2.1 Ecken Ungenauigkeit bei Bezierkurven</p>
 
-Auch die Verwendung von Antialiasing{A17}, um diese Ungenauigkeiten zu verblenden, ist aufgrund des Enstehen von Überlappung der Linien nur unter hohem Aufwand möglich. 
+Auch die Verwendung von Antialiasing{A17}, um diese Ungenauigkeiten zu verblenden, ist aufgrund des Entstehen von Überlappung der Linien nur unter hohem Aufwand möglich. 
 
-Ein möglicher Lösungsansatz wäre es, die Berechnung der Kurve auf die GPU zu verlagern und dort nach dem De Casteljau Algorithmus für verschiedene \\(t\\) die Nähe des gerade zu berechnenden Pixels zu ermitteln, um so die Kurve darzustellen. Dies hätte den Vorteil, dass man auch im Nachhinein noch die Position der Kontrollpunkte verändern könnte, sowie basierend auf der Nähe zum berechneteten \\(t\\) auch eine Form des Antialiasing anwenden könnte um harte Übergänge zu vermeiden.
+Ein möglicher Lösungsansatz wäre es, die Berechnung der Kurve auf die GPU zu verlagern und dort nach dem De Casteljau Algorithmus für verschiedene \\(t\\) die Nähe des gerade zu berechnenden Pixels zu ermitteln, um so die Kurve darzustellen. Dies hätte den Vorteil, dass man auch im Nachhinein noch die Position der Kontrollpunkte verändern könnte, sowie basierend auf der Nähe zum berechneten \\(t\\) auch eine Form des Antialiasing anwenden könnte um harte Übergänge zu vermeiden.
 
 ```cpp
 #type fragment
@@ -59,5 +59,5 @@ void main()
 
 Bei näherer Betrachtung dieser Methode unter Berücksichtigung der Funktionsweise moderner Grafikkarten und dem damit einhergehenden Leitfaden zur Vermeidung von Kontrollstrukturen und Iteration sowie Rekursion und der größtmöglichen Beschränkung auf mathematische Rechnungen, zeigt sich auch in der Praxis, dass der hier gewählte Ansatz schon bei einzelnen Kurven eine erhebliche Menge an Rechenleistung benötigt und schon bei wenigen Kurven pro Frame nicht mehr realistisch verwendbar ist. Auch bleibt die Ungenauigkeit des De Casteljau Algorithmus erhalten.
 
-Ein realistischer Lösungansatz zur exakten Berechnung und Zeichnung von Bezierkurven soll im folgenden erarbeitet werden. \
-Um dies zu erzielen soll durch das Lösen von Funktionsgleichungen die Bestimmung, ob ein Pixel \\(P\\) auf \\(B(t)\\) liegt, mathematisch und ohne rekursiven Aufruf erfolgen, um so die Grafikkarte optimal zu nutzen und Effizient eine vielzahl verschiedener Bezierkuven zu zeichnen.
+Ein realistischer Lösungsansatz zur exakten Berechnung und Zeichnung von Bezierkurven soll im Folgenden erarbeitet werden. \
+Um dies zu erzielen, soll durch das Lösen von Funktionsgleichungen die Bestimmung, ob ein Pixel \\(P\\) auf \\(B(t)\\) liegt, mathematisch und ohne rekursiven Aufruf erfolgen, um so die Grafikkarte optimal zu nutzen und effizient eine vielzahl verschiedener Bezierkurven zu zeichnen.

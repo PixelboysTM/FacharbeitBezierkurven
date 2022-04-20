@@ -16,7 +16,7 @@ A8 https://docs.microsoft.com/en-us/typography/truetype/ [06.03.2022 12:59]
 
 A9 https://www.adobe.com/products/type/opentype.html [06.03.2022 13:00]
 
-A10 ./pdf/FontRasterizationRobertDHersch.pdf
+A10 https://github.com/PixelboysTM/FacharbeitBezierkurven/blob/e3ed9e8ca87a5df89f1dd44b9265104c4cedf676/pdf/FontRasterizationRogerDHersch.pdf [20.04.2022 17:01]
 
 A11 https://docs.microsoft.com/en-us/typography/truetype/images/rast-image27.gif [06.03.2022 13:15]
 

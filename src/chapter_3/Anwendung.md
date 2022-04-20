@@ -5,7 +5,7 @@ Wie schon bereits in [1.2](../chapter_1/WoFindetManBezierkurven.md) beschrieben,
 ![Bezierkurve 3ten und 4ten Grades in Railway](../img/RailwayBezierPoints.png)
 <p style="text-align: center; font-size: 1.6rem;">Bild 3.1.1 Bezierkurven Grad 3 und 4 in Railway{A15}</p>
 
-Die Strecke wird durch festgelegte Punkte am Anfang und am Ende eines Bahnsegments angegeben. Die weiteren ein bzw. zwei Kontrollpunkte werden vom Programm enstprechend der bereits bekannten Punkte ermittelt.
+Die Strecke wird durch festgelegte Punkte am Anfang und am Ende eines Bahnsegments angegeben. Die weiteren ein bzw. zwei Kontrollpunkte werden vom Programm entsprechend der bereits bekannten Punkte ermittelt.
 
 Wenn zur Laufzeit des Programmes ein neues Kurvenelement erzeugt werden soll, werden diese Punkte dem Element übergeben.
 ```java
@@ -19,7 +19,7 @@ public CurveForm(
     }
 ```
 
-Anschließend werden mit Hilfe des De Casteljau Algorithmus 100 Punkte auf der Kurve berechnet und mit Linien verbunden, welche statisch an die Grafikkarte gesendet werden, um dort zum letzendlichen Rendern benutzt zu werden.
+Anschließend werden mit Hilfe des De Casteljau Algorithmus 100 Punkte auf der Kurve berechnet und mit Linien verbunden, welche statisch an die Grafikkarte gesendet werden, um dort zum Rendern benutzt zu werden.
 
 ```java
 origin_x = new float[(int) density];

@@ -1,6 +1,6 @@
 ### 3.3 Mathematischer Lösungsansatz
 
-Der mathematische Lösungsweg wird im folgenden für eine beliebige Bezierkurve dritten Grades gezeigt. Die meisten der gezeigten Eigenschaften lassen sich jedoch auf Bezierkurven mit anderem Grad übertragen.
+Der mathematische Lösungsweg wird im Folgenden für eine beliebige Bezierkurve dritten Grades gezeigt. Die meisten der gezeigten Eigenschaften lassen sich jedoch auf Bezierkurven mit anderem Grad übertragen.
 
 Als Ausgangsgleichung ziehen wir also die zuvor in [2.1.2](../chapter_2.md) hergeleitete Gleichung:
 

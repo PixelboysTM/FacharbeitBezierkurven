@@ -185,7 +185,7 @@ Point lerp(Point a, Point b, float t); // Implementation not included
 <p>$$ lerp3(a,b,c,t) = lerp(\color{yellow}{lerp(a,b,t)},\color{red}{lerp(b,c,t)},t) $$</p>
 <p>Oder mit Punkten:</p>
 <p>$$ lerp3(t) = lerp(\color{yellow}{lerp(P_{0},P_{1},t)},\color{red}{lerp(P_{1},P_{2},t)},t) $$</p>
-<p>Was man auschreiben kann als:</p>
+<p>Was man ausschreiben kann als:</p>
 <p>$$ lerp3(t) = (1-t)\color{yellow}{((1-t)P_{0} + tP_{1})} + t\color{red}{((1-t)P_{1} + tP_{2})} $$</p>
 <p>Veranschaulicht gibt dies folgenden Verlauf:</p>
 <p><img src="./img/QuadraticBezierAnimatedT.png" alt="ezierkurve mit drei Kontrollpunkten abhängig von t" /></p>

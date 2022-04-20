@@ -162,29 +162,29 @@
     <a href="chapter_5/Code.html">5.3 Code</a> <br />
     <a href="chapter_5/Demos.html">5.4 Demos</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h3 id="11-was-sind-bezierkurven"><a class="header" href="#11-was-sind-bezierkurven">1.1 Was sind Bezierkurven</a></h3>
-<p>Der französiche Ingenieur Pierre Étienne Bézier, geboren 1910 in Paris, entwickelte in den 60er Jahren eine Gestaltungsmöglichkeit von Karosserieformen für seinen damaligen Arbeitgeber Renault. Seit 1968 ist sein System zur &quot;Freiform Kurven und Oberflächen Design&quot; (&quot;interactive free-form curve and surface design and 3D milling for manufactoring clay models and masters&quot;{A2}) bei Renault in Nutzung.</p>
-<p>Auch der französiche Mathematiker Paul de Faget de Casteljau, geboren 1930, beschäftigte sich im 20ten Jahrhundert mit der Modelierung von Kurven und Flächen{A3}. Als Physiker bei Citroën arbeitete er ebenfalls an der Modellierung von Karosserien mithilfe von Bezierkurven. Unabhängig von Pierre Étienne Bézier entwickelte er den nach ihm benannten Casteljau Algorithmus zur Beschreibung von Bezierkurven.</p>
+<p>Der französische Ingenieur Pierre Étienne Bézier, geboren 1910 in Paris, entwickelte in den 60er Jahren eine Gestaltungsmöglichkeit von Karosserieformen für seinen damaligen Arbeitgeber Renault. Seit 1968 ist sein System zur &quot;Freiform Kurven und Oberflächen Design&quot; (&quot;interactive free-form curve and surface design and 3D milling for manufactoring clay models and masters&quot;{A2}) bei Renault in Nutzung.</p>
+<p>Auch der französische Mathematiker Paul de Faget de Casteljau, geboren 1930, beschäftigte sich im 20ten Jahrhundert mit der Modelierung von Kurven und Flächen{A3}. Als Physiker bei Citroën arbeitete er ebenfalls an der Modellierung von Karosserien mithilfe von Bezierkurven. Unabhängig von Pierre Étienne Bézier entwickelte er den nach ihm benannten Casteljau Algorithmus zur Beschreibung von Bezierkurven.</p>
 <p>Beide entwickelten das Konzept unabhängig voneinander, wobei der Name der Bezierkurve sich durchsetzte. Wohingegen der nach Casteljau benannte Algorithmus die bekannteste Darstellungsform ist.</p>
-<p>Eine Bezierkurve wird durch mindestens zwei sogenante Kontrollpunkte (sowohl 2-dimensional als auch 3-dimensional) beschrieben, welche den Verlauf der Kurve beeinflussen. Die Kontrollpunkte benannt \(P_{0}\) bis \(P_{n}\), wobei '\(n+1\)' den Grad der Kurve angibt. Der erste und letzte Kontrollpunkt sind die Endpunkte der Kurve und berühren diese somit, alle weiteren Kontrollpunkte \(P_{1} - P_{n-1}\), soweit vorhanden beeinflussen den Verlauf der Kurve, liegen aber, in der Regel nicht auf dieser.</p>
+<p>Eine Bezierkurve wird durch mindestens zwei sogenannte Kontrollpunkte (sowohl 2-dimensional als auch 3-dimensional) beschrieben, welche den Verlauf der Kurve beeinflussen. Die Kontrollpunkte benannt \(P_{0}\) bis \(P_{n}\), wobei '\(n+1\)' den Grad der Kurve angibt. Der erste und letzte Kontrollpunkt sind die Endpunkte der Kurve und berühren diese somit, alle weiteren Kontrollpunkte \(P_{1} - P_{n-1}\), soweit vorhanden beeinflussen den Verlauf der Kurve, liegen aber, in der Regel nicht auf dieser.</p>
 <p><img src="chapter_1/../img/Grad4Bezierkurve.png" alt="BezierkurveGrad4" /></p>
 <p style="text-align: center; font-size: 1.6rem;">Demo 1.1.1 Bezierkurve mit 4 Kontrollpunkten (BezierkurveGrad4)</P>
 <p>Mathematisch wird die Kurve \(B\) in Abhängigkeit von \( t \) als \(B(t)\) angegeben, wobei \( 0\leq{}t\leq{}1 \) ist. Und es gilt \( B(0)=P_{0} \) und \( B(1)=P_{n} \). Bei \( n \) Kontrollpunkten gilt somit{A13}: </p>
 <p>$$ B(t) = \sum_{i=0}^{n}{^nC_{i} (1-t)^{n-i} t^i P_{i}} , 0 \leq t \leq 1 $$</p>
 <p>Oder auch:</p>
 <p>$$ B(t) = \sum_{i=0}^{n}{\frac{n!}{i! (n - i)!} (1-t)^{n-i} t^i P_{i}} , 0 \leq t \leq 1$$</p>
-<p>Hier lässt sich das vorangegangene Verhalten gut erkennnen bei kleinem \( t \) setzt sich \( P_{0} \) durch und bei großem \( t \) setzt sich \( P_{n} \) durch.</p>
+<p>Hier lässt sich das vorangegangene Verhalten gut erkennen bei kleinem \( t \) setzt sich \( P_{0} \) durch und bei großem \( t \) setzt sich \( P_{n} \) durch.</p>
 <div style="break-before: page; page-break-before: always;"></div><h3 id="11-was-sind-bezierkurven-1"><a class="header" href="#11-was-sind-bezierkurven-1">1.1 Was sind Bezierkurven</a></h3>
-<p>Der französiche Ingenieur Pierre Étienne Bézier, geboren 1910 in Paris, entwickelte in den 60er Jahren eine Gestaltungsmöglichkeit von Karosserieformen für seinen damaligen Arbeitgeber Renault. Seit 1968 ist sein System zur &quot;Freiform Kurven und Oberflächen Design&quot; (&quot;interactive free-form curve and surface design and 3D milling for manufactoring clay models and masters&quot;{A2}) bei Renault in Nutzung.</p>
-<p>Auch der französiche Mathematiker Paul de Faget de Casteljau, geboren 1930, beschäftigte sich im 20ten Jahrhundert mit der Modelierung von Kurven und Flächen{A3}. Als Physiker bei Citroën arbeitete er ebenfalls an der Modellierung von Karosserien mithilfe von Bezierkurven. Unabhängig von Pierre Étienne Bézier entwickelte er den nach ihm benannten Casteljau Algorithmus zur Beschreibung von Bezierkurven.</p>
+<p>Der französische Ingenieur Pierre Étienne Bézier, geboren 1910 in Paris, entwickelte in den 60er Jahren eine Gestaltungsmöglichkeit von Karosserieformen für seinen damaligen Arbeitgeber Renault. Seit 1968 ist sein System zur &quot;Freiform Kurven und Oberflächen Design&quot; (&quot;interactive free-form curve and surface design and 3D milling for manufactoring clay models and masters&quot;{A2}) bei Renault in Nutzung.</p>
+<p>Auch der französische Mathematiker Paul de Faget de Casteljau, geboren 1930, beschäftigte sich im 20ten Jahrhundert mit der Modelierung von Kurven und Flächen{A3}. Als Physiker bei Citroën arbeitete er ebenfalls an der Modellierung von Karosserien mithilfe von Bezierkurven. Unabhängig von Pierre Étienne Bézier entwickelte er den nach ihm benannten Casteljau Algorithmus zur Beschreibung von Bezierkurven.</p>
 <p>Beide entwickelten das Konzept unabhängig voneinander, wobei der Name der Bezierkurve sich durchsetzte. Wohingegen der nach Casteljau benannte Algorithmus die bekannteste Darstellungsform ist.</p>
-<p>Eine Bezierkurve wird durch mindestens zwei sogenante Kontrollpunkte (sowohl 2-dimensional als auch 3-dimensional) beschrieben, welche den Verlauf der Kurve beeinflussen. Die Kontrollpunkte benannt \(P_{0}\) bis \(P_{n}\), wobei '\(n+1\)' den Grad der Kurve angibt. Der erste und letzte Kontrollpunkt sind die Endpunkte der Kurve und berühren diese somit, alle weiteren Kontrollpunkte \(P_{1} - P_{n-1}\), soweit vorhanden beeinflussen den Verlauf der Kurve, liegen aber, in der Regel nicht auf dieser.</p>
+<p>Eine Bezierkurve wird durch mindestens zwei sogenannte Kontrollpunkte (sowohl 2-dimensional als auch 3-dimensional) beschrieben, welche den Verlauf der Kurve beeinflussen. Die Kontrollpunkte benannt \(P_{0}\) bis \(P_{n}\), wobei '\(n+1\)' den Grad der Kurve angibt. Der erste und letzte Kontrollpunkt sind die Endpunkte der Kurve und berühren diese somit, alle weiteren Kontrollpunkte \(P_{1} - P_{n-1}\), soweit vorhanden beeinflussen den Verlauf der Kurve, liegen aber, in der Regel nicht auf dieser.</p>
 <p><img src="chapter_1/../img/Grad4Bezierkurve.png" alt="BezierkurveGrad4" /></p>
 <p style="text-align: center; font-size: 1.6rem;">Demo 1.1.1 Bezierkurve mit 4 Kontrollpunkten (BezierkurveGrad4)</P>
 <p>Mathematisch wird die Kurve \(B\) in Abhängigkeit von \( t \) als \(B(t)\) angegeben, wobei \( 0\leq{}t\leq{}1 \) ist. Und es gilt \( B(0)=P_{0} \) und \( B(1)=P_{n} \). Bei \( n \) Kontrollpunkten gilt somit{A13}: </p>
 <p>$$ B(t) = \sum_{i=0}^{n}{^nC_{i} (1-t)^{n-i} t^i P_{i}} , 0 \leq t \leq 1 $$</p>
 <p>Oder auch:</p>
 <p>$$ B(t) = \sum_{i=0}^{n}{\frac{n!}{i! (n - i)!} (1-t)^{n-i} t^i P_{i}} , 0 \leq t \leq 1$$</p>
-<p>Hier lässt sich das vorangegangene Verhalten gut erkennnen bei kleinem \( t \) setzt sich \( P_{0} \) durch und bei großem \( t \) setzt sich \( P_{n} \) durch.</p>
+<p>Hier lässt sich das vorangegangene Verhalten gut erkennen bei kleinem \( t \) setzt sich \( P_{0} \) durch und bei großem \( t \) setzt sich \( P_{n} \) durch.</p>
 <div style="break-before: page; page-break-before: always;"></div><h3 id="12-wo-findet-man-bezierkurven"><a class="header" href="#12-wo-findet-man-bezierkurven">1.2 Wo findet man Bezierkurven</a></h3>
 <p>Heutzutage sind Bezierkurven in vielen Bereichen zu finden. Insbesondere in der Softwareindustrie stolpert man an jeder Ecke über die Verwendung von Bezierkurven.</p>
 <p>Viele Bildbearbeitungsprogramme nutzen Bezierkurven um Farbkorrekturen zu ermöglichen oder um Kurven einzufügen. <br />
@@ -200,7 +200,7 @@ In Gimp{A4} zum Beispiel lassen sich die einzelnen Farbkanäle, Rot, Grün, Blau
 <p>Auch viele Mindmap oder Graphing Tools nutzen Bezierkurven um Beziehungen zwischen Elementen kenntlich zu machen. Wie auch in diesem Bild aus einem von mir erstellten Nachbau des Lehrprogramms LogikSim{A6}, mit Hilfe dessen man Stromschaltkreise simulieren kann.</p>
 <p><img src="chapter_1/../img/LogicSimulatorBezierConnectors.png" alt="LogikSim Clone" /></p>
 <p style="text-align: center; font-size: 1.6rem;">Bild 1.2.4 LogikSim Clone{A7}</p>
-<p>Das kürzlich im Informatikunterricht enstandene Softwareprojekt zur Effizienzoptimierung von Bahnverbindungen und Zugstrecken nutzt Bezierkurven um den Verlauf der Schienen darzustellen{A15}.</p>
+<p>Das kürzlich im Informatikunterricht entstandene Softwareprojekt zur Effizienzoptimierung von Bahnverbindungen und Zugstrecken nutzt Bezierkurven um den Verlauf der Schienen darzustellen{A15}.</p>
 <p><img src="chapter_1/../img/RailwayDemoBezierTracks.png" alt="Railway Informatikprojekt" /></p>
 <p style="text-align: center; font-size: 1.6rem;">Bild 1.2.5 Railway Informatikprojekt</p>
 <p>Was viele nicht wissen, auch bei Schriftarten kommen Bezierkurven zum Einsatz. <br />
@@ -254,7 +254,7 @@ Point lerp(Point a, Point b, float t); // Implementation not included
 <p>$$ lerp3(a,b,c,t) = lerp(\color{yellow}{lerp(a,b,t)},\color{red}{lerp(b,c,t)},t) $$</p>
 <p>Oder mit Punkten:</p>
 <p>$$ lerp3(t) = lerp(\color{yellow}{lerp(P_{0},P_{1},t)},\color{red}{lerp(P_{1},P_{2},t)},t) $$</p>
-<p>Was man auschreiben kann als:</p>
+<p>Was man ausschreiben kann als:</p>
 <p>$$ lerp3(t) = (1-t)\color{yellow}{((1-t)P_{0} + tP_{1})} + t\color{red}{((1-t)P_{1} + tP_{2})} $$</p>
 <p>Veranschaulicht gibt dies folgenden Verlauf:</p>
 <p><img src="./img/QuadraticBezierAnimatedT.png" alt="ezierkurve mit drei Kontrollpunkten abhängig von t" /></p>
@@ -274,7 +274,7 @@ Point lerp(Point a, Point b, float t); // Implementation not included
 <p>Wie schon bereits in <a href="chapter_3/../chapter_1/WoFindetManBezierkurven.html">1.2</a> beschrieben, nutzt das Schulprojekt Railway aus dem Informatikprojekt Bezierkurven um Kurven in Bahnlinien zu erstellen darzustellen. Hierzu wird je nach Type (Kurve oder Versatz) eine Bezierkurve dritten oder vierten Grades erstellt. </p>
 <p><img src="chapter_3/../img/RailwayBezierPoints.png" alt="Bezierkurve 3ten und 4ten Grades in Railway" /></p>
 <p style="text-align: center; font-size: 1.6rem;">Bild 3.1.1 Bezierkurven Grad 3 und 4 in Railway{A15}</p>
-<p>Die Strecke wird durch festgelegte Punkte am Anfang und am Ende eines Bahnsegments angegeben. Die weiteren ein bzw. zwei Kontrollpunkte werden vom Programm enstprechend der bereits bekannten Punkte ermittelt.</p>
+<p>Die Strecke wird durch festgelegte Punkte am Anfang und am Ende eines Bahnsegments angegeben. Die weiteren ein bzw. zwei Kontrollpunkte werden vom Programm entsprechend der bereits bekannten Punkte ermittelt.</p>
 <p>Wenn zur Laufzeit des Programmes ein neues Kurvenelement erzeugt werden soll, werden diese Punkte dem Element übergeben.</p>
 <pre><code class="language-java">public CurveForm(
     int x1, int y1, 
@@ -285,7 +285,7 @@ Point lerp(Point a, Point b, float t); // Implementation not included
         // Weiterer Initlialisierungs Code
     }
 </code></pre>
-<p>Anschließend werden mit Hilfe des De Casteljau Algorithmus 100 Punkte auf der Kurve berechnet und mit Linien verbunden, welche statisch an die Grafikkarte gesendet werden, um dort zum letzendlichen Rendern benutzt zu werden.</p>
+<p>Anschließend werden mit Hilfe des De Casteljau Algorithmus 100 Punkte auf der Kurve berechnet und mit Linien verbunden, welche statisch an die Grafikkarte gesendet werden, um dort zum Rendern benutzt zu werden.</p>
 <pre><code class="language-java">origin_x = new float[(int) density];
 origin_y = new float[(int) density];
 for (int i = 0; i &lt; density; i++) {
@@ -371,7 +371,7 @@ void main(){
 <p>Wie schon bereits in <a href="chapter_3/../chapter_1/WoFindetManBezierkurven.html">1.2</a> beschrieben, nutzt das Schulprojekt Railway aus dem Informatikprojekt Bezierkurven um Kurven in Bahnlinien zu erstellen darzustellen. Hierzu wird je nach Type (Kurve oder Versatz) eine Bezierkurve dritten oder vierten Grades erstellt. </p>
 <p><img src="chapter_3/../img/RailwayBezierPoints.png" alt="Bezierkurve 3ten und 4ten Grades in Railway" /></p>
 <p style="text-align: center; font-size: 1.6rem;">Bild 3.1.1 Bezierkurven Grad 3 und 4 in Railway{A15}</p>
-<p>Die Strecke wird durch festgelegte Punkte am Anfang und am Ende eines Bahnsegments angegeben. Die weiteren ein bzw. zwei Kontrollpunkte werden vom Programm enstprechend der bereits bekannten Punkte ermittelt.</p>
+<p>Die Strecke wird durch festgelegte Punkte am Anfang und am Ende eines Bahnsegments angegeben. Die weiteren ein bzw. zwei Kontrollpunkte werden vom Programm entsprechend der bereits bekannten Punkte ermittelt.</p>
 <p>Wenn zur Laufzeit des Programmes ein neues Kurvenelement erzeugt werden soll, werden diese Punkte dem Element übergeben.</p>
 <pre><code class="language-java">public CurveForm(
     int x1, int y1, 
@@ -382,7 +382,7 @@ void main(){
         // Weiterer Initlialisierungs Code
     }
 </code></pre>
-<p>Anschließend werden mit Hilfe des De Casteljau Algorithmus 100 Punkte auf der Kurve berechnet und mit Linien verbunden, welche statisch an die Grafikkarte gesendet werden, um dort zum letzendlichen Rendern benutzt zu werden.</p>
+<p>Anschließend werden mit Hilfe des De Casteljau Algorithmus 100 Punkte auf der Kurve berechnet und mit Linien verbunden, welche statisch an die Grafikkarte gesendet werden, um dort zum Rendern benutzt zu werden.</p>
 <pre><code class="language-java">origin_x = new float[(int) density];
 origin_y = new float[(int) density];
 for (int i = 0; i &lt; density; i++) {
@@ -467,9 +467,9 @@ void main(){
 <div style="break-before: page; page-break-before: always;"></div><h3 id="32-ineffizienz-und-schwierigkeiten-in-der-praxis"><a class="header" href="#32-ineffizienz-und-schwierigkeiten-in-der-praxis">3.2 Ineffizienz und Schwierigkeiten in der Praxis</a></h3>
 <p>Beim vorangegangenen Ansatz aus <a href="chapter_3/./Anwendung.html">3.1</a> wird die gesamte Arbeit der Bestimmung der Bezierkurve auf Seiten der CPU im vornerein berechnet und die Grafikkarte ausgehebelt, indem nur noch Linien gezeichnet werden. Dieses Vorgehen ist ungenau, da der Casteljau Algorithmus nur eine Annäherung der Kurve berechnet. Dies zeigt sich insbesondere an den Ecken der Kurven, welche auf Grund der ungleichen Verteilung der von \(t\) abhängigen Punkte auf der Kurve sehr harte Stufenübergänge erhalten. </p>
 <p><img src="chapter_3/../img/RailwayEdgeDistortion.png" alt="Ecken ungenauigkeit bei Bezierkurven" /></p>
-<p style="text-align: center; font-size: 1.6rem;">Bild 3.2.1 Ecken ungenauigkeit bei Bezierkurven</p>
-<p>Auch die Verwendung von Antialiasing{A17}, um diese Ungenauigkeiten zu verblenden, ist aufgrund des Enstehen von Überlappung der Linien nur unter hohem Aufwand möglich. </p>
-<p>Ein möglicher Lösungsansatz wäre es, die Berechnung der Kurve auf die GPU zu verlagern und dort nach dem De Casteljau Algorithmus für verschiedene \(t\) die Nähe des gerade zu berechnenden Pixels zu ermitteln, um so die Kurve darzustellen. Dies hätte den Vorteil, dass man auch im Nachhinein noch die Position der Kontrollpunkte verändern könnte, sowie basierend auf der Nähe zum berechneteten \(t\) auch eine Form des Antialiasing anwenden könnte um harte Übergänge zu vermeiden.</p>
+<p style="text-align: center; font-size: 1.6rem;">Bild 3.2.1 Ecken Ungenauigkeit bei Bezierkurven</p>
+<p>Auch die Verwendung von Antialiasing{A17}, um diese Ungenauigkeiten zu verblenden, ist aufgrund des Entstehen von Überlappung der Linien nur unter hohem Aufwand möglich. </p>
+<p>Ein möglicher Lösungsansatz wäre es, die Berechnung der Kurve auf die GPU zu verlagern und dort nach dem De Casteljau Algorithmus für verschiedene \(t\) die Nähe des gerade zu berechnenden Pixels zu ermitteln, um so die Kurve darzustellen. Dies hätte den Vorteil, dass man auch im Nachhinein noch die Position der Kontrollpunkte verändern könnte, sowie basierend auf der Nähe zum berechneten \(t\) auch eine Form des Antialiasing anwenden könnte um harte Übergänge zu vermeiden.</p>
 <pre><code class="language-cpp">#type fragment
 #version 330 core
 
@@ -517,10 +517,10 @@ void main()
 }
 </code></pre>
 <p>Bei näherer Betrachtung dieser Methode unter Berücksichtigung der Funktionsweise moderner Grafikkarten und dem damit einhergehenden Leitfaden zur Vermeidung von Kontrollstrukturen und Iteration sowie Rekursion und der größtmöglichen Beschränkung auf mathematische Rechnungen, zeigt sich auch in der Praxis, dass der hier gewählte Ansatz schon bei einzelnen Kurven eine erhebliche Menge an Rechenleistung benötigt und schon bei wenigen Kurven pro Frame nicht mehr realistisch verwendbar ist. Auch bleibt die Ungenauigkeit des De Casteljau Algorithmus erhalten.</p>
-<p>Ein realistischer Lösungansatz zur exakten Berechnung und Zeichnung von Bezierkurven soll im folgenden erarbeitet werden. <br />
-Um dies zu erzielen soll durch das Lösen von Funktionsgleichungen die Bestimmung, ob ein Pixel \(P\) auf \(B(t)\) liegt, mathematisch und ohne rekursiven Aufruf erfolgen, um so die Grafikkarte optimal zu nutzen und Effizient eine vielzahl verschiedener Bezierkuven zu zeichnen.</p>
+<p>Ein realistischer Lösungsansatz zur exakten Berechnung und Zeichnung von Bezierkurven soll im Folgenden erarbeitet werden. <br />
+Um dies zu erzielen, soll durch das Lösen von Funktionsgleichungen die Bestimmung, ob ein Pixel \(P\) auf \(B(t)\) liegt, mathematisch und ohne rekursiven Aufruf erfolgen, um so die Grafikkarte optimal zu nutzen und effizient eine vielzahl verschiedener Bezierkurven zu zeichnen.</p>
 <div style="break-before: page; page-break-before: always;"></div><h3 id="33-mathematischer-lösungsansatz"><a class="header" href="#33-mathematischer-lösungsansatz">3.3 Mathematischer Lösungsansatz</a></h3>
-<p>Der mathematische Lösungsweg wird im folgenden für eine beliebige Bezierkurve dritten Grades gezeigt. Die meisten der gezeigten Eigenschaften lassen sich jedoch auf Bezierkurven mit anderem Grad übertragen.</p>
+<p>Der mathematische Lösungsweg wird im Folgenden für eine beliebige Bezierkurve dritten Grades gezeigt. Die meisten der gezeigten Eigenschaften lassen sich jedoch auf Bezierkurven mit anderem Grad übertragen.</p>
 <p>Als Ausgangsgleichung ziehen wir also die zuvor in <a href="chapter_3/../chapter_2.html">2.1.2</a> hergeleitete Gleichung:</p>
 <p>$$ B_{3}(t) = (1-t)^2P_{0} + 2(1-t)tP_{1} + t^2P_{2} $$</p>
 <p>Da \(P_{0}\) - \(P_{2}\) Punkte mit jeweils einer \(x\) und \(y\) sind lässt sich die obige Gleichung unterteilen in eine für \(x\) und eine für \(y\):</p>
@@ -561,8 +561,8 @@ Sind jetzt ein t von x und ein t von y gleich, so liegt \(T\) auf der Kurve. Die
         margin-right: auto;
     }
 </style><div style="break-before: page; page-break-before: always;"></div><h3 id="4-zusammenfassung"><a class="header" href="#4-zusammenfassung">4. Zusammenfassung</a></h3>
-<p>Bei der Betrachtung des de Casteljau Algorythmus und dessen Anwendung in der Praxis, wie in <a href="./chapter_3/IneffizienzUndSchwierigkeitenInDerPraxis.html">3.2</a> ist aufgefallen, dass der Algorythmus gerade für das Zeichnen solcher Bezierkurven aufgrund der Rekursivität, sowie Abhängigkeit von \(t\) in einem pixelbasierten rendering System ungeeignet ist.</p>
-<p>Durch genauere Betrachtung der mathematishen Definition einer solchen Bezierkurve und das Nutzen der Mitternachtsformel konnte ich die folgende Formel wie in <a href="./chapter_3/MathematischerLoesungsansatz.html">3.3</a> herleiten, die nun punktspezifisch angewendet werden kann.</p>
+<p>Bei der Betrachtung des de Casteljau Algorithmus und dessen Anwendung in der Praxis, wie in <a href="./chapter_3/IneffizienzUndSchwierigkeitenInDerPraxis.html">3.2</a> ist aufgefallen, dass der Algorithmus gerade für das Zeichnen solcher Bezierkurven aufgrund der Rekursivität, sowie Abhängigkeit von \(t\) in einem pixelbasierten rendering System ungeeignet ist.</p>
+<p>Durch genauere Betrachtung der mathematischen Definition einer solchen Bezierkurve und das Nutzen der Mitternachtsformel konnte ich die folgende Formel wie in <a href="./chapter_3/MathematischerLoesungsansatz.html">3.3</a> herleiten, die nun punktspezifisch angewendet werden kann.</p>
 <p>$$ t_{1,2} = \frac{-(2P_{1} - 2P_{0}) \pm \sqrt{(2P_{1} - 2P_{0})^2 - 4(P_{0} - 2P_{1} + P_{2})(P_{0} - T)}}{2(P_{0} - 2P_{1} + P_{2})} $$</p>
 <p>Weiterführend zu dieser Arbeit kann nun die obige Formel genutzt werden, um die praktische Implementierung mithilfe eines Shaders durchzuführen.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="anhang"><a class="header" href="#anhang">Anhang</a></h1>
@@ -575,7 +575,7 @@ Sind jetzt ein t von x und ein t von y gleich, so liegt \(T\) auf der Kurve. Die
 <p>A7 https://github.com/PixelboysTM/LogikSimClone [06.03.2022 12:22]</p>
 <p>A8 https://docs.microsoft.com/en-us/typography/truetype/ [06.03.2022 12:59]</p>
 <p>A9 https://www.adobe.com/products/type/opentype.html [06.03.2022 13:00]</p>
-<p>A10 ./pdf/FontRasterizationRobertDHersch.pdf</p>
+<p>A10 https://github.com/PixelboysTM/FacharbeitBezierkurven/blob/e3ed9e8ca87a5df89f1dd44b9265104c4cedf676/pdf/FontRasterizationRogerDHersch.pdf [20.04.2022 17:01]</p>
 <p>A11 https://docs.microsoft.com/en-us/typography/truetype/images/rast-image27.gif [06.03.2022 13:15]</p>
 <p>A12 http://paulbourke.net/miscellaneous/interpolation/ [06.03.2022 14:30]</p>
 <p>A13 https://www.freecodecamp.org/news/nerding-out-with-bezier-curves-6e3c0bc48e2f/ [13.03.2022 19:03]</p>

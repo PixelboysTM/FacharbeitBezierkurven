@@ -24,7 +24,7 @@ Auch viele Mindmap oder Graphing Tools nutzen Bezierkurven um Beziehungen zwisch
 ![LogikSim Clone](../img/LogicSimulatorBezierConnectors.png)
 <p style="text-align: center; font-size: 1.6rem;">Bild 1.2.4 LogikSim Clone{A7}</p>
 
-Das kürzlich im Informatikunterricht enstandene Softwareprojekt zur Effizienzoptimierung von Bahnverbindungen und Zugstrecken nutzt Bezierkurven um den Verlauf der Schienen darzustellen{A15}.
+Das kürzlich im Informatikunterricht entstandene Softwareprojekt zur Effizienzoptimierung von Bahnverbindungen und Zugstrecken nutzt Bezierkurven um den Verlauf der Schienen darzustellen{A15}.
 
 ![Railway Informatikprojekt](../img/RailwayDemoBezierTracks.png)
 <p style="text-align: center; font-size: 1.6rem;">Bild 1.2.5 Railway Informatikprojekt</p>
