@@ -1,15 +1,20 @@
 ### 3.1 Anwendung
 
-Wie schon bereits in [1.2](../chapter_1/WoFindetManBezierkurven.md) beschrieben, nutzt das Schulprojekt Railway aus dem Informatikprojekt Bezierkurven um Kurven in Bahnlinien zu erstellen darzustellen. Hierzu wird je nach Type (Kurve oder Versatz) eine Bezierkurve dritten oder viereten Grades erstellt. 
+Wie schon bereits in [1.2](../chapter_1/WoFindetManBezierkurven.md) beschrieben, nutzt das Schulprojekt Railway aus dem Informatikprojekt Bezierkurven um Kurven in Bahnlinien zu erstellen darzustellen. Hierzu wird je nach Type (Kurve oder Versatz) eine Bezierkurve dritten oder vierten Grades erstellt. 
 
 ![Bezierkurve 3ten und 4ten Grades in Railway](../img/RailwayBezierPoints.png)
 <p style="text-align: center; font-size: 1.6rem;">Bild 3.1.1 Bezierkurven Grad 3 und 4 in Railway{A15}</p>
 
-Die Strecke wird angegeben durch festgelegte Punkte am Anfang und am Ende eines Bahnsegments. Die weiteren ein bzw. zwei Kontrollpunkte werden vom Programm enstprechend der bereits bekannten Punkte ermittelt.
+Die Strecke wird durch festgelegte Punkte am Anfang und am Ende eines Bahnsegments angegeben. Die weiteren ein bzw. zwei Kontrollpunkte werden vom Programm enstprechend der bereits bekannten Punkte ermittelt.
 
 Wenn zur Laufzeit des Programmes ein neues Kurvenelement erzeugt werden soll, werden diese Punkte dem Element übergeben.
 ```java
-public CurveForm(int x1, int y1, int x2, int y2, int x3, int y3, float width, Color color) {
+public CurveForm(
+    int x1, int y1, 
+    int x2, int y2, 
+    int x3, int y3, 
+    float width, 
+    Color color) {
         // Weiterer Initlialisierungs Code
     }
 ```

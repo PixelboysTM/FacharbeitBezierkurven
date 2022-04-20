@@ -1,13 +1,14 @@
 ### 1.2 Wo findet man Bezierkurven
 
-Heutzutage sind Bezierkurven überall zu finden. Insbesondere in der Softwareindustrie stolpert man an jeder Ecke über die Verwendung von Bezierkurven.
+Heutzutage sind Bezierkurven in vielen Bereichen zu finden. Insbesondere in der Softwareindustrie stolpert man an jeder Ecke über die Verwendung von Bezierkurven.
 
-Viele Bildbearbeitungsprogramme nutzen Bezierkurven um Farbkorekturen zu ermöglichen oder gar um Kurven einzufügen. In Gimp{A4} zum Bespiel lassen sich die einzelnen Farbkanäle, Rot, Grün, Blau und Alpha/Transparenz mithilfe einer Bezierkurve anpassen. 
+Viele Bildbearbeitungsprogramme nutzen Bezierkurven um Farbkorrekturen zu ermöglichen oder um Kurven einzufügen. \
+In Gimp{A4} zum Beispiel lassen sich die einzelnen Farbkanäle, Rot, Grün, Blau und Alpha/Transparenz mithilfe einer Bezierkurve anpassen. 
 
 ![Farbkurveneditor Gimp](../img/FarbkurvenkorrekturfensterGimp.png)
 <p style="text-align: center; font-size: 1.6rem;">Bild 1.2.1 Farbkurveneditor Gimp</p>
 
-Aber auch in Programmen wie Paint.NET{A5} gibt es Tools die einem Erlauben mit Hilfe von Bezierkurven Grafiken zu erstellen. Durch das Bewegen von zwei Konrollpunkten lässt sich eine Kurve erstellen, welche von einem Punkt zum anderen verläuft und durch weitere Kontrollpunkte beeinflusst wird.
+Aber auch in Programmen wie Paint.NET{A5} gibt es Tools, die einem Erlauben mit Hilfe von Bezierkurven Grafiken zu erstellen. Durch das Bewegen von zwei Konrollpunkten lässt sich eine Kurve erstellen, welche von einem Punkt zum anderen verläuft und durch weitere Kontrollpunkte beeinflusst wird.
 
 ![Bezierkurve in Paint.NET](../img/BezierkurventoolPaintNet.png)
 <p style="text-align: center; font-size: 1.6rem;">Bild 1.2.2 Bezierkurve in Paint.NET</p>
@@ -23,12 +24,13 @@ Auch viele Mindmap oder Graphing Tools nutzen Bezierkurven um Beziehungen zwisch
 ![LogikSim Clone](../img/LogicSimulatorBezierConnectors.png)
 <p style="text-align: center; font-size: 1.6rem;">Bild 1.2.4 LogikSim Clone{A7}</p>
 
-In einem kürzlich im Informatikunterricht enstandenen Softwareprojekt zur Effizienzoptimierung von Bahnverbindungen und Zugstrecken nutzten wir Bezierkurven um den Verlauf der Schienen darzustellen{A15}.
+Das kürzlich im Informatikunterricht enstandene Softwareprojekt zur Effizienzoptimierung von Bahnverbindungen und Zugstrecken nutzt Bezierkurven um den Verlauf der Schienen darzustellen{A15}.
 
 ![Railway Informatikprojekt](../img/RailwayDemoBezierTracks.png)
 <p style="text-align: center; font-size: 1.6rem;">Bild 1.2.5 Railway Informatikprojekt</p>
 
-Was viele nicht wissen, auch bei Schriftarten kommen Bezierkurven zum Einsatz. Dateiformate wie zum Beispiel TrueType{A8} oder OpenType{A9} nutzen Bezierkurven um die Umrandung (outline) einzelner Buchstaben mathematisch zu beschreiben. Dies ermöglicht, dass die Buchstaben beim Ändern der Schriftgröße nicht unscharf oder verschwommen werden. Auf Abruf kann für jede Schriftgröße vom entsprechenden Programm zur Laufzeit das passende Bild der Buchstaben generiert werden. Dieses Verfahren wird Fontrasterization gennant{A10}.
+Was viele nicht wissen, auch bei Schriftarten kommen Bezierkurven zum Einsatz. \
+Dateiformate wie zum Beispiel TrueType{A8} oder OpenType{A9} nutzen Bezierkurven um die Umrandung (outline) einzelner Buchstaben mathematisch zu beschreiben. Dies verhindert, dass die Buchstaben bei Änderung der Schriftgröße nicht unscharf oder verschwommen werden. Auf Abruf kann für jede Schriftgröße vom entsprechenden Programm zur Laufzeit das passende Bild der Buchstaben generiert werden. Dieses Verfahren wird Fontrasterization gennant{A10}.
 
 ![Font Rasterization](https://docs.microsoft.com/en-us/typography/truetype/images/rast-image27.gif)
 <p style="text-align: center; font-size: 1.6rem;">Bild 1.2.6 Font Rasterization{A11}</p>

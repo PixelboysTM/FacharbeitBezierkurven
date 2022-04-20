@@ -144,9 +144,9 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h3 id="4-zussamenfassung"><a class="header" href="#4-zussamenfassung">4. Zussamenfassung</a></h3>
-<p>Bei der Betrachtung des de Casteljau Algorythmus und dessen Anwendung in der Praxis, wie in <a href="./chapter_3/IneffizienzUndSchwierigkeitenInDerPraxis.html">3.2</a> ist aufgefallen, dass der Algorythmus gerade für das Zeichnen solcher Bezierkurven ungeiegnet ist, aufgrund der rekursivität, sowie abhängigkeit von \(t\) in einem Pixelbasierten rendering System.</p>
-<p>Durch genauere Betrachtung der mathematishen Definition einer solchen Bezierkurve und das nutzen der MItternachtformel konnte ich die folgende Formel wie in <a href="./chapter_3/MathematischerLoesungsansatz.html">3.3</a> herleiten, die nun punktspezifisch angewendet werden kann.</p>
+                        <h3 id="4-zusammenfassung"><a class="header" href="#4-zusammenfassung">4. Zusammenfassung</a></h3>
+<p>Bei der Betrachtung des de Casteljau Algorythmus und dessen Anwendung in der Praxis, wie in <a href="./chapter_3/IneffizienzUndSchwierigkeitenInDerPraxis.html">3.2</a> ist aufgefallen, dass der Algorythmus gerade für das Zeichnen solcher Bezierkurven aufgrund der Rekursivität, sowie Abhängigkeit von \(t\) in einem pixelbasierten rendering System ungeeignet ist.</p>
+<p>Durch genauere Betrachtung der mathematishen Definition einer solchen Bezierkurve und das Nutzen der Mitternachtsformel konnte ich die folgende Formel wie in <a href="./chapter_3/MathematischerLoesungsansatz.html">3.3</a> herleiten, die nun punktspezifisch angewendet werden kann.</p>
 <p>$$ t_{1,2} = \frac{-(2P_{1} - 2P_{0}) \pm \sqrt{(2P_{1} - 2P_{0})^2 - 4(P_{0} - 2P_{1} + P_{2})(P_{0} - T)}}{2(P_{0} - 2P_{1} + P_{2})} $$</p>
 <p>Weiterführend zu dieser Arbeit kann nun die obige Formel genutzt werden, um die praktische Implementierung mithilfe eines Shaders durchzuführen.</p>
 

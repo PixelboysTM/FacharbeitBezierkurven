@@ -34,10 +34,5 @@ A17 https://helpx.adobe.com/photoshop-elements/key-concepts/aliasing-anti-aliasi
 
 A18 https://www.desmos.com/calculator/4sabernbxy [04.04.2022 17:32]
 
-#### Code:
+A19 https://de.serlo.org/mathe/1549/mitternachtsformel-quadratische-l%C3%B6sungsformel [20.04.2022 12:05]
 
-L1 http://www.jeffreythompson.org/collision-detection/point-circle.php [12.03.2022 13:18]
-
-Out of order:
-
-https://cubic-bezier.com/#.58,1.35,.54,.33

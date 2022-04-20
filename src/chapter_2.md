@@ -1,6 +1,7 @@
 ## 2. Zeichnen von Bezierkurven
 
-Wir haben gesehen, dass Bezierkurven in vielen Bereichen Anwendung finden und jeder von uns sie schon einmal verwendet hat, auch wenn es nur durch das Schreiben eines Textes in Microsoft Word{A16} war. Nun wollen wir jedoch nicht mehr anschauen wo wir Bezierkurven finden, sondern wir wollen selber Bezierkurven zeichnen. Vorerst wollen wir uns hierzu mit dem De Casteljau's Algorithmus beschäftigen.
+Wir haben gesehen, dass Bezierkurven in vielen Bereichen Anwendung finden und jeder von uns sie schon einmal verwendet hat, auch wenn es nur durch das Schreiben eines Textes in Microsoft Word{A16} war. \
+ Nun wollen wir jedoch nicht mehr anschauen, wo wir Bezierkurven finden, sondern wir wollen selber Bezierkurven zeichnen. Vorerst wollen wir uns hierzu mit dem De Casteljau's Algorithmus beschäftigen.
 
 ### 2.1 Nutzung des De Casteljau's Algorithmus
 
@@ -11,7 +12,7 @@ Der nach Paul de Casteljau benannte Algorithmus, ist ein rekursiver Algorithmus 
 
 #### 2.1.1 Beispiel mit zwei Kontrollpunkten
 
-Zur Interpolation zweier Zahlen wird folgenede Funktion genutzt:
+Zur Interpolation zweier Zahlen wird folgende Funktion genutzt:
 $$ lerp(a,b,t) = (1-t)*a + t * b, 0 \leq t \leq 1 $$
 
 Und eingesetzt:

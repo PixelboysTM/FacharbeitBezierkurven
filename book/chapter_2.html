@@ -145,7 +145,8 @@
                 <div id="content" class="content">
                     <main>
                         <h2 id="2-zeichnen-von-bezierkurven"><a class="header" href="#2-zeichnen-von-bezierkurven">2. Zeichnen von Bezierkurven</a></h2>
-<p>Wir haben gesehen, dass Bezierkurven in vielen Bereichen Anwendung finden und jeder von uns sie schon einmal verwendet hat, auch wenn es nur durch das Schreiben eines Textes in Microsoft Word{A16} war. Nun wollen wir jedoch nicht mehr anschauen wo wir Bezierkurven finden, sondern wir wollen selber Bezierkurven zeichnen. Vorerst wollen wir uns hierzu mit dem De Casteljau's Algorithmus beschäftigen.</p>
+<p>Wir haben gesehen, dass Bezierkurven in vielen Bereichen Anwendung finden und jeder von uns sie schon einmal verwendet hat, auch wenn es nur durch das Schreiben eines Textes in Microsoft Word{A16} war. <br />
+Nun wollen wir jedoch nicht mehr anschauen, wo wir Bezierkurven finden, sondern wir wollen selber Bezierkurven zeichnen. Vorerst wollen wir uns hierzu mit dem De Casteljau's Algorithmus beschäftigen.</p>
 <h3 id="21-nutzung-des-de-casteljaus-algorithmus"><a class="header" href="#21-nutzung-des-de-casteljaus-algorithmus">2.1 Nutzung des De Casteljau's Algorithmus</a></h3>
 <p>Der nach Paul de Casteljau benannte Algorithmus, ist ein rekursiver Algorithmus zur näherungsweisen Auswertung von Bezierkurven, mithilfe linearer Interpolation. Welche durch theoretische unendliche Verfeinerung die Bezierkurve formt.</p>
 <blockquote>
@@ -153,7 +154,7 @@
 -- Paul Bourke{A12}</p>
 </blockquote>
 <h4 id="211-beispiel-mit-zwei-kontrollpunkten"><a class="header" href="#211-beispiel-mit-zwei-kontrollpunkten">2.1.1 Beispiel mit zwei Kontrollpunkten</a></h4>
-<p>Zur Interpolation zweier Zahlen wird folgenede Funktion genutzt:
+<p>Zur Interpolation zweier Zahlen wird folgende Funktion genutzt:
 $$ lerp(a,b,t) = (1-t)*a + t * b, 0 \leq t \leq 1 $$</p>
 <p>Und eingesetzt:</p>
 <p>$$ lerp(t) = (1-t)*P_{0} + t * P_{1} $$</p>
