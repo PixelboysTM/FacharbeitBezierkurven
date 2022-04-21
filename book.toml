@@ -7,3 +7,5 @@ title = "Die Kunst, Bezierkurven auf nicht iterative Weise zu berechnen"
 
 [output.html]
 mathjax-support = true
+default-theme = "Ayu"
+preferred-dark-theme = "Ayu"
