@@ -9,7 +9,7 @@ Beide entwickelten das Konzept unabhängig voneinander, wobei der Name der Bezie
 Eine Bezierkurve wird durch mindestens zwei sogenannte Kontrollpunkte (sowohl 2-dimensional als auch 3-dimensional) beschrieben, welche den Verlauf der Kurve beeinflussen. Die Kontrollpunkte benannt \\(P_{0}\\) bis \\(P_{n}\\), wobei '\\(n+1\\)' den Grad der Kurve angibt. Der erste und letzte Kontrollpunkt sind die Endpunkte der Kurve und berühren diese somit, alle weiteren Kontrollpunkte \\(P_{1} - P_{n-1}\\), soweit vorhanden beeinflussen den Verlauf der Kurve, liegen aber, in der Regel nicht auf dieser.
 
 ![BezierkurveGrad4](../img/Grad4Bezierkurve.png)
-<p style="text-align: center; font-size: 1.6rem;">Demo 1.1.1 Bezierkurve mit 4 Kontrollpunkten (BezierkurveGrad4)</P>
+<p style="text-align: center; font-size: 1.6rem;">Demo 1.1.1 Bezierkurve mit 4 Kontrollpunkten <a href="../chapter_5/Demos.md#bezierkurve-grad-4">(BezierkurveGrad4)</a></P>
 
 Mathematisch wird die Kurve \\(B\\) in Abhängigkeit von \\( t \\) als \\(B(t)\\) angegeben, wobei \\( 0\leq{}t\leq{}1 \\) ist. Und es gilt \\( B(0)=P_{0} \\) und \\( B(1)=P_{n} \\). Bei \\( n \\) Kontrollpunkten gilt somit[\\(^{A13}\\)](../links.md#a13): 
 
