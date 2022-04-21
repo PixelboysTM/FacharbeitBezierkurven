@@ -28,7 +28,7 @@ $$ = [(1-t)P_{0}] + [tP_{1}] = (1-t)P_{0} + t*P_{1} $$
 Also ist eine Bezierkurve des zweiten Grades gleich einer linearen Interpolation.
 
 ![Lineare Bezierkurve abhängig von t](./img/LinearBezierAnimatedT.png)
-<p style="text-align: center; font-size: 1.6rem;">Demo 2.1.1 Lineare Bezierkurve abhängig von t (LinearBezierAnimatedT)</p>
+<p style="text-align: center; font-size: 1.6rem;">Demo 2.1.1 Lineare Bezierkurve abhängig von t <a href="./chapter_5/Demos.md#linear-bezier-animated-t">(LinearBezierAnimatedT)</a></p>
 
 
 Es lässt sich erkennen, dass der blaue Punkt von \\(P_{0}\\) bei \\(t=0\\) zu \\(P_{1}\\) bei \\(t=1\\) wandert.
@@ -65,7 +65,7 @@ $$ lerp3(t) = (1-t)\color{yellow}{((1-t)P_{0} + tP_{1})} + t\color{red}{((1-t)P_
 Veranschaulicht gibt dies folgenden Verlauf:
 
 ![ezierkurve mit drei Kontrollpunkten abhängig von t](./img/QuadraticBezierAnimatedT.png)
-<p style="text-align: center; font-size: 1.6rem;">Demo 2.1.2 Bezierkurve mit drei Kontrollpunkten abhängig von t (QuadraticBezierAnimatedT)</p>
+<p style="text-align: center; font-size: 1.6rem;">Demo 2.1.2 Bezierkurve mit drei Kontrollpunkten abhängig von t <a href="./chapter_5/Demos.md#quadratic-bezier-animated-t">(QuadraticBezierAnimatedT)</a></p>
 
 Das zeigt sich auch in der allgemeinen Form des Grades drei:
 
@@ -87,4 +87,4 @@ Das an zwei und drei Kontrollpunkten gezeigte Verhalten gilt auch bei unendlich 
 So lässt bei Variation des t eine beliebig genaue Annäherung an die Bezierkurve bestimmen.
 
 ![Bezierkurve mit drei Kontrollpunkten und großem Δt](./img/QuadraticBezierChangingT.png)
-<p style="text-align: center; font-size: 1.6rem;">Demo 2.1.3 Bezierkurve mit drei Kontrollpunkten und großem Δt (QuadraticBezierChangingT)</p>
+<p style="text-align: center; font-size: 1.6rem;">Demo 2.1.3 Bezierkurve mit drei Kontrollpunkten und großem Δt <a href="./chapter_5/Demos.md#quadratic-bezier-changing-t">(QuadraticBezierChangingT)</a></p>
