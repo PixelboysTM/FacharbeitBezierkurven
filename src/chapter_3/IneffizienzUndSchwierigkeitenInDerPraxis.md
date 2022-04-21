@@ -5,7 +5,7 @@ Beim vorangegangenen Ansatz aus [3.1](./Anwendung.md) wird die gesamte Arbeit de
 ![Ecken ungenauigkeit bei Bezierkurven](../img/RailwayEdgeDistortion.png)
 <p style="text-align: center; font-size: 1.6rem;">Bild 3.2.1 Ecken Ungenauigkeit bei Bezierkurven</p>
 
-Auch die Verwendung von Antialiasing{A17}, um diese Ungenauigkeiten zu verblenden, ist aufgrund des Entstehen von Überlappung der Linien nur unter hohem Aufwand möglich. 
+Auch die Verwendung von Antialiasing[\\(^{A17}\\)](../links.md#a17), um diese Ungenauigkeiten zu verblenden, ist aufgrund des Entstehen von Überlappung der Linien nur unter hohem Aufwand möglich. 
 
 Ein möglicher Lösungsansatz wäre es, die Berechnung der Kurve auf die GPU zu verlagern und dort nach dem De Casteljau Algorithmus für verschiedene \\(t\\) die Nähe des gerade zu berechnenden Pixels zu ermitteln, um so die Kurve darzustellen. Dies hätte den Vorteil, dass man auch im Nachhinein noch die Position der Kontrollpunkte verändern könnte, sowie basierend auf der Nähe zum berechneten \\(t\\) auch eine Form des Antialiasing anwenden könnte um harte Übergänge zu vermeiden.
 
@@ -34,8 +34,6 @@ vec3 colorBezier(vec2 pixelCoord, vec2 pos1, vec2 pos2, vec2 pos3, vec3 baseColo
             color = bezierColor;
         }
     }
-
-
     return color;
 }
 vec3 pointDraw(vec2 pixelCoord, vec2 pos, vec3 baseColor, vec3 pointColor){...}//SDFCircleFunc

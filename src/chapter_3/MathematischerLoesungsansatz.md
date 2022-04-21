@@ -60,7 +60,7 @@ Für die \\(x\\) und \\(y\\) Komponente ergeben sich somit insgesamt zwischen 0 
 Sind jetzt ein t von x und ein t von y gleich, so liegt \\(T\\) auf der Kurve. Die kleinste Differenz von x und y gibt also die Nähe des Punktes zur Kurve an.
 
 ![alt](../img/MathematischerAnsatzBeispielkurveTestpunkt.png)
-<p style="text-align: center; font-size: 1.6rem;">Demo 3.3.1 Testpunkt Nähe zur Kurve{A18}</p>
+<p style="text-align: center; font-size: 1.6rem;">Demo 3.3.1 Testpunkt Nähe zur Kurve</p>
 
 <style>
     img{

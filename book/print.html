@@ -157,30 +157,30 @@
     <a href="chapter_3/MathematischerLoesungsansatz.html">3.3 Mathematischer Lösungsansatz</a> </p>
 <h3 id="4-zussamenfassung"><a class="header" href="#4-zussamenfassung"><a href="chapter_4.html">4. Zussamenfassung</a></a></h3>
 <h3 id="5-anhang"><a class="header" href="#5-anhang"><a href="chapter_5.html">5. Anhang</a></a></h3>
-<p>    <a href="chapter_5/Literaturangabe.html">5.1 Literaturangabe</a> <br />
-    <a href="chapter_5/WeitereLinks.html">5.2 Weitere Links</a> [Zu Videos Animationen etc. ? Muss dass ins Literatur Verzeicnis?] <br />
+<p>    <a href="./links.html">5.1 Literaturangabe</a> <br />
+    <a href="chapter_5/WeitereLinks.html">5.2 Weitere Links</a> <br />
     <a href="chapter_5/Code.html">5.3 Code</a> <br />
     <a href="chapter_5/Demos.html">5.4 Demos</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h3 id="11-was-sind-bezierkurven"><a class="header" href="#11-was-sind-bezierkurven">1.1 Was sind Bezierkurven</a></h3>
-<p>Der französische Ingenieur Pierre Étienne Bézier, geboren 1910 in Paris, entwickelte in den 60er Jahren eine Gestaltungsmöglichkeit von Karosserieformen für seinen damaligen Arbeitgeber Renault. Seit 1968 ist sein System zur &quot;Freiform Kurven und Oberflächen Design&quot; (&quot;interactive free-form curve and surface design and 3D milling for manufactoring clay models and masters&quot;{A2}) bei Renault in Nutzung.</p>
-<p>Auch der französische Mathematiker Paul de Faget de Casteljau, geboren 1930, beschäftigte sich im 20ten Jahrhundert mit der Modelierung von Kurven und Flächen{A3}. Als Physiker bei Citroën arbeitete er ebenfalls an der Modellierung von Karosserien mithilfe von Bezierkurven. Unabhängig von Pierre Étienne Bézier entwickelte er den nach ihm benannten Casteljau Algorithmus zur Beschreibung von Bezierkurven.</p>
+<p>Der französische Ingenieur Pierre Étienne Bézier<a href="chapter_1/../links.html#a1">\(^{A1}\)</a>, geboren 1910 in Paris, entwickelte in den 60er Jahren eine Gestaltungsmöglichkeit von Karosserieformen für seinen damaligen Arbeitgeber Renault. Seit 1968 ist sein System zur &quot;Freiform Kurven und Oberflächen Design&quot; (&quot;interactive free-form curve and surface design and 3D milling for manufactoring clay models and masters&quot;<a href="chapter_1/../links.html#a2">\(^{A2}\)</a>) bei Renault in Nutzung.</p>
+<p>Auch der französische Mathematiker Paul de Faget de Casteljau, geboren 1930, beschäftigte sich im 20ten Jahrhundert mit der Modelierung von Kurven und Flächen<a href="chapter_1/../links.html#a3">\(^{A3}\)</a>. Als Physiker bei Citroën arbeitete er ebenfalls an der Modellierung von Karosserien mithilfe von Bezierkurven. Unabhängig von Pierre Étienne Bézier entwickelte er den nach ihm benannten Casteljau Algorithmus zur Beschreibung von Bezierkurven.</p>
 <p>Beide entwickelten das Konzept unabhängig voneinander, wobei der Name der Bezierkurve sich durchsetzte. Wohingegen der nach Casteljau benannte Algorithmus die bekannteste Darstellungsform ist.</p>
 <p>Eine Bezierkurve wird durch mindestens zwei sogenannte Kontrollpunkte (sowohl 2-dimensional als auch 3-dimensional) beschrieben, welche den Verlauf der Kurve beeinflussen. Die Kontrollpunkte benannt \(P_{0}\) bis \(P_{n}\), wobei '\(n+1\)' den Grad der Kurve angibt. Der erste und letzte Kontrollpunkt sind die Endpunkte der Kurve und berühren diese somit, alle weiteren Kontrollpunkte \(P_{1} - P_{n-1}\), soweit vorhanden beeinflussen den Verlauf der Kurve, liegen aber, in der Regel nicht auf dieser.</p>
 <p><img src="chapter_1/../img/Grad4Bezierkurve.png" alt="BezierkurveGrad4" /></p>
 <p style="text-align: center; font-size: 1.6rem;">Demo 1.1.1 Bezierkurve mit 4 Kontrollpunkten (BezierkurveGrad4)</P>
-<p>Mathematisch wird die Kurve \(B\) in Abhängigkeit von \( t \) als \(B(t)\) angegeben, wobei \( 0\leq{}t\leq{}1 \) ist. Und es gilt \( B(0)=P_{0} \) und \( B(1)=P_{n} \). Bei \( n \) Kontrollpunkten gilt somit{A13}: </p>
+<p>Mathematisch wird die Kurve \(B\) in Abhängigkeit von \( t \) als \(B(t)\) angegeben, wobei \( 0\leq{}t\leq{}1 \) ist. Und es gilt \( B(0)=P_{0} \) und \( B(1)=P_{n} \). Bei \( n \) Kontrollpunkten gilt somit<a href="chapter_1/../links.html#a13">\(^{A13}\)</a>: </p>
 <p>$$ B(t) = \sum_{i=0}^{n}{^nC_{i} (1-t)^{n-i} t^i P_{i}} , 0 \leq t \leq 1 $$</p>
 <p>Oder auch:</p>
 <p>$$ B(t) = \sum_{i=0}^{n}{\frac{n!}{i! (n - i)!} (1-t)^{n-i} t^i P_{i}} , 0 \leq t \leq 1$$</p>
 <p>Hier lässt sich das vorangegangene Verhalten gut erkennen bei kleinem \( t \) setzt sich \( P_{0} \) durch und bei großem \( t \) setzt sich \( P_{n} \) durch.</p>
 <div style="break-before: page; page-break-before: always;"></div><h3 id="11-was-sind-bezierkurven-1"><a class="header" href="#11-was-sind-bezierkurven-1">1.1 Was sind Bezierkurven</a></h3>
-<p>Der französische Ingenieur Pierre Étienne Bézier, geboren 1910 in Paris, entwickelte in den 60er Jahren eine Gestaltungsmöglichkeit von Karosserieformen für seinen damaligen Arbeitgeber Renault. Seit 1968 ist sein System zur &quot;Freiform Kurven und Oberflächen Design&quot; (&quot;interactive free-form curve and surface design and 3D milling for manufactoring clay models and masters&quot;{A2}) bei Renault in Nutzung.</p>
-<p>Auch der französische Mathematiker Paul de Faget de Casteljau, geboren 1930, beschäftigte sich im 20ten Jahrhundert mit der Modelierung von Kurven und Flächen{A3}. Als Physiker bei Citroën arbeitete er ebenfalls an der Modellierung von Karosserien mithilfe von Bezierkurven. Unabhängig von Pierre Étienne Bézier entwickelte er den nach ihm benannten Casteljau Algorithmus zur Beschreibung von Bezierkurven.</p>
+<p>Der französische Ingenieur Pierre Étienne Bézier<a href="chapter_1/../links.html#a1">\(^{A1}\)</a>, geboren 1910 in Paris, entwickelte in den 60er Jahren eine Gestaltungsmöglichkeit von Karosserieformen für seinen damaligen Arbeitgeber Renault. Seit 1968 ist sein System zur &quot;Freiform Kurven und Oberflächen Design&quot; (&quot;interactive free-form curve and surface design and 3D milling for manufactoring clay models and masters&quot;<a href="chapter_1/../links.html#a2">\(^{A2}\)</a>) bei Renault in Nutzung.</p>
+<p>Auch der französische Mathematiker Paul de Faget de Casteljau, geboren 1930, beschäftigte sich im 20ten Jahrhundert mit der Modelierung von Kurven und Flächen<a href="chapter_1/../links.html#a3">\(^{A3}\)</a>. Als Physiker bei Citroën arbeitete er ebenfalls an der Modellierung von Karosserien mithilfe von Bezierkurven. Unabhängig von Pierre Étienne Bézier entwickelte er den nach ihm benannten Casteljau Algorithmus zur Beschreibung von Bezierkurven.</p>
 <p>Beide entwickelten das Konzept unabhängig voneinander, wobei der Name der Bezierkurve sich durchsetzte. Wohingegen der nach Casteljau benannte Algorithmus die bekannteste Darstellungsform ist.</p>
 <p>Eine Bezierkurve wird durch mindestens zwei sogenannte Kontrollpunkte (sowohl 2-dimensional als auch 3-dimensional) beschrieben, welche den Verlauf der Kurve beeinflussen. Die Kontrollpunkte benannt \(P_{0}\) bis \(P_{n}\), wobei '\(n+1\)' den Grad der Kurve angibt. Der erste und letzte Kontrollpunkt sind die Endpunkte der Kurve und berühren diese somit, alle weiteren Kontrollpunkte \(P_{1} - P_{n-1}\), soweit vorhanden beeinflussen den Verlauf der Kurve, liegen aber, in der Regel nicht auf dieser.</p>
 <p><img src="chapter_1/../img/Grad4Bezierkurve.png" alt="BezierkurveGrad4" /></p>
 <p style="text-align: center; font-size: 1.6rem;">Demo 1.1.1 Bezierkurve mit 4 Kontrollpunkten (BezierkurveGrad4)</P>
-<p>Mathematisch wird die Kurve \(B\) in Abhängigkeit von \( t \) als \(B(t)\) angegeben, wobei \( 0\leq{}t\leq{}1 \) ist. Und es gilt \( B(0)=P_{0} \) und \( B(1)=P_{n} \). Bei \( n \) Kontrollpunkten gilt somit{A13}: </p>
+<p>Mathematisch wird die Kurve \(B\) in Abhängigkeit von \( t \) als \(B(t)\) angegeben, wobei \( 0\leq{}t\leq{}1 \) ist. Und es gilt \( B(0)=P_{0} \) und \( B(1)=P_{n} \). Bei \( n \) Kontrollpunkten gilt somit<a href="chapter_1/../links.html#a13">\(^{A13}\)</a>: </p>
 <p>$$ B(t) = \sum_{i=0}^{n}{^nC_{i} (1-t)^{n-i} t^i P_{i}} , 0 \leq t \leq 1 $$</p>
 <p>Oder auch:</p>
 <p>$$ B(t) = \sum_{i=0}^{n}{\frac{n!}{i! (n - i)!} (1-t)^{n-i} t^i P_{i}} , 0 \leq t \leq 1$$</p>
@@ -188,25 +188,26 @@
 <div style="break-before: page; page-break-before: always;"></div><h3 id="12-wo-findet-man-bezierkurven"><a class="header" href="#12-wo-findet-man-bezierkurven">1.2 Wo findet man Bezierkurven</a></h3>
 <p>Heutzutage sind Bezierkurven in vielen Bereichen zu finden. Insbesondere in der Softwareindustrie stolpert man an jeder Ecke über die Verwendung von Bezierkurven.</p>
 <p>Viele Bildbearbeitungsprogramme nutzen Bezierkurven um Farbkorrekturen zu ermöglichen oder um Kurven einzufügen. <br />
-In Gimp{A4} zum Beispiel lassen sich die einzelnen Farbkanäle, Rot, Grün, Blau und Alpha/Transparenz mithilfe einer Bezierkurve anpassen. </p>
+In Gimp<a href="chapter_1/../links.html#a4">\(^{A4}\)</a> zum Beispiel lassen sich die einzelnen Farbkanäle, Rot, Grün, Blau und Alpha/Transparenz mithilfe einer Bezierkurve anpassen. </p>
 <p><img src="chapter_1/../img/FarbkurvenkorrekturfensterGimp.png" alt="Farbkurveneditor Gimp" /></p>
 <p style="text-align: center; font-size: 1.6rem;">Bild 1.2.1 Farbkurveneditor Gimp</p>
-<p>Aber auch in Programmen wie Paint.NET{A5} gibt es Tools, die einem Erlauben mit Hilfe von Bezierkurven Grafiken zu erstellen. Durch das Bewegen von zwei Konrollpunkten lässt sich eine Kurve erstellen, welche von einem Punkt zum anderen verläuft und durch weitere Kontrollpunkte beeinflusst wird.</p>
+<p>Aber auch in Programmen wie Paint.NET<a href="chapter_1/../links.html#a5">\(^{A5}\)</a> gibt es Tools, die einem Erlauben mit Hilfe von Bezierkurven Grafiken zu erstellen. Durch das Bewegen von zwei Konrollpunkten lässt sich eine Kurve erstellen, welche von einem Punkt zum anderen verläuft und durch weitere Kontrollpunkte beeinflusst wird.</p>
 <p><img src="chapter_1/../img/BezierkurventoolPaintNet.png" alt="Bezierkurve in Paint.NET" /></p>
 <p style="text-align: center; font-size: 1.6rem;">Bild 1.2.2 Bezierkurve in Paint.NET</p>
-<p>Beim Erstellen von Animationen und dem Beschreiben von Bewegungen werden Bezierkurven genutzt um flüssige Bewegungsabläufe und Übergänge zu erstellen, wie zum Beispiel im Animtionseditor der Spieleengine Unity{A14}.</p>
+<p>Beim Erstellen von Animationen und dem Beschreiben von Bewegungen werden Bezierkurven genutzt um flüssige Bewegungsabläufe und Übergänge zu erstellen, wie zum Beispiel im Animtionseditor der Spieleengine Unity<a href="chapter_1/../links.html#a14">\(^{A14}\)</a>.</p>
 <p><img src="chapter_1/../img/AnimationCurveSnakeVid.png" alt="Animierte Schlange in Unity" /></p>
 <p style="text-align: center; font-size: 1.6rem;">Animation 1.2.3 Animierte Schlange in Unity</p>
-<p>Auch viele Mindmap oder Graphing Tools nutzen Bezierkurven um Beziehungen zwischen Elementen kenntlich zu machen. Wie auch in diesem Bild aus einem von mir erstellten Nachbau des Lehrprogramms LogikSim{A6}, mit Hilfe dessen man Stromschaltkreise simulieren kann.</p>
+<p>Auch viele Mindmap oder Graphing Tools nutzen Bezierkurven um Beziehungen zwischen Elementen kenntlich zu machen. Wie auch in diesem Bild aus einem von mir erstellten Nachbau des Lehrprogramms LogikSim<a href="chapter_1/../links.html#a6">\(^{A6}\)</a>, mit Hilfe dessen man Stromschaltkreise simulieren kann.</p>
 <p><img src="chapter_1/../img/LogicSimulatorBezierConnectors.png" alt="LogikSim Clone" /></p>
 <p style="text-align: center; font-size: 1.6rem;">Bild 1.2.4 LogikSim Clone{A7}</p>
-<p>Das kürzlich im Informatikunterricht entstandene Softwareprojekt zur Effizienzoptimierung von Bahnverbindungen und Zugstrecken nutzt Bezierkurven um den Verlauf der Schienen darzustellen{A15}.</p>
+<p>Das kürzlich im Informatikunterricht entstandene Softwareprojekt zur Effizienzoptimierung von Bahnverbindungen und Zugstrecken nutzt Bezierkurven um den Verlauf der Schienen darzustellen<a href="chapter_1/../links.html#a15">\(^{A15}\)</a>.</p>
 <p><img src="chapter_1/../img/RailwayDemoBezierTracks.png" alt="Railway Informatikprojekt" /></p>
 <p style="text-align: center; font-size: 1.6rem;">Bild 1.2.5 Railway Informatikprojekt</p>
 <p>Was viele nicht wissen, auch bei Schriftarten kommen Bezierkurven zum Einsatz. <br />
-Dateiformate wie zum Beispiel TrueType{A8} oder OpenType{A9} nutzen Bezierkurven um die Umrandung (outline) einzelner Buchstaben mathematisch zu beschreiben. Dies verhindert, dass die Buchstaben bei Änderung der Schriftgröße nicht unscharf oder verschwommen werden. Auf Abruf kann für jede Schriftgröße vom entsprechenden Programm zur Laufzeit das passende Bild der Buchstaben generiert werden. Dieses Verfahren wird Fontrasterization gennant{A10}.</p>
+Dateiformate wie zum Beispiel TrueType<a href="chapter_1/../links.html#a8">\(^{A8}\)</a> oder OpenType<a href="chapter_1/../links.html#a9">\(^{A9}\)</a> nutzen Bezierkurven um die Umrandung (outline) einzelner Buchstaben mathematisch zu beschreiben. Dies verhindert, dass die Buchstaben bei Änderung der Schriftgröße nicht unscharf oder verschwommen werden. Auf Abruf kann für jede Schriftgröße vom entsprechenden Programm zur Laufzeit das passende Bild der Buchstaben generiert werden. Dieses Verfahren wird Fontrasterization gennant<a href="chapter_1/../links.html#a10">\(^{A10}\)</a>.</p>
 <p><img src="https://docs.microsoft.com/en-us/typography/truetype/images/rast-image27.gif" alt="Font Rasterization" /></p>
-<p style="text-align: center; font-size: 1.6rem;">Bild 1.2.6 Font Rasterization{A11}</p>
+<p style="text-align: center; font-size: 1.6rem;">Bild 1.2.6 Font Rasterization</p>
+<p>Bild<a href="chapter_1/../links.html#a11">\(^{A11}\)</a></p>
 <style>
     img{
         display: block;
@@ -214,13 +215,13 @@ Dateiformate wie zum Beispiel TrueType{A8} oder OpenType{A9} nutzen Bezierkurven
         margin-right: auto;
     }
 </style><div style="break-before: page; page-break-before: always;"></div><h2 id="2-zeichnen-von-bezierkurven-1"><a class="header" href="#2-zeichnen-von-bezierkurven-1">2. Zeichnen von Bezierkurven</a></h2>
-<p>Wir haben gesehen, dass Bezierkurven in vielen Bereichen Anwendung finden und jeder von uns sie schon einmal verwendet hat, auch wenn es nur durch das Schreiben eines Textes in Microsoft Word{A16} war. <br />
+<p>Wir haben gesehen, dass Bezierkurven in vielen Bereichen Anwendung finden und jeder von uns sie schon einmal verwendet hat, auch wenn es nur durch das Schreiben eines Textes in Microsoft Word<a href="../links.html#a16">\(^{A16}\)</a> war. <br />
 Nun wollen wir jedoch nicht mehr anschauen, wo wir Bezierkurven finden, sondern wir wollen selber Bezierkurven zeichnen. Vorerst wollen wir uns hierzu mit dem De Casteljau's Algorithmus beschäftigen.</p>
 <h3 id="21-nutzung-des-de-casteljaus-algorithmus"><a class="header" href="#21-nutzung-des-de-casteljaus-algorithmus">2.1 Nutzung des De Casteljau's Algorithmus</a></h3>
 <p>Der nach Paul de Casteljau benannte Algorithmus, ist ein rekursiver Algorithmus zur näherungsweisen Auswertung von Bezierkurven, mithilfe linearer Interpolation. Welche durch theoretische unendliche Verfeinerung die Bezierkurve formt.</p>
 <blockquote>
 <p>Linear interpolation is the simplest method of getting values at positions in between the data points. The points are simply joined by straight line segments. Each segment (bounded by two data points) can be interpolated independently. The parameter mu defines where to estimate the value on the interpolated line, it is 0 at the first point and 1 and the second point. For interpolated values between the two points mu ranges between 0 and 1. Values of mu outside this range result in extrapolation. <br />
--- Paul Bourke{A12}</p>
+-- Paul Bourke<a href="../links.html#a12">\(^{A12}\)</a></p>
 </blockquote>
 <h4 id="211-beispiel-mit-zwei-kontrollpunkten"><a class="header" href="#211-beispiel-mit-zwei-kontrollpunkten">2.1.1 Beispiel mit zwei Kontrollpunkten</a></h4>
 <p>Zur Interpolation zweier Zahlen wird folgende Funktion genutzt:
@@ -273,7 +274,8 @@ Point lerp(Point a, Point b, float t); // Implementation not included
 <div style="break-before: page; page-break-before: always;"></div><h3 id="31-anwendung"><a class="header" href="#31-anwendung">3.1 Anwendung</a></h3>
 <p>Wie schon bereits in <a href="chapter_3/../chapter_1/WoFindetManBezierkurven.html">1.2</a> beschrieben, nutzt das Schulprojekt Railway aus dem Informatikprojekt Bezierkurven um Kurven in Bahnlinien zu erstellen darzustellen. Hierzu wird je nach Type (Kurve oder Versatz) eine Bezierkurve dritten oder vierten Grades erstellt. </p>
 <p><img src="chapter_3/../img/RailwayBezierPoints.png" alt="Bezierkurve 3ten und 4ten Grades in Railway" /></p>
-<p style="text-align: center; font-size: 1.6rem;">Bild 3.1.1 Bezierkurven Grad 3 und 4 in Railway{A15}</p>
+<p style="text-align: center; font-size: 1.6rem;">Bild 3.1.1 Bezierkurven Grad 3 und 4 in Railway</p>
+<p>Railway<a href="chapter_3/../links.html#a15">\(^{A15}\)</a></p>
 <p>Die Strecke wird durch festgelegte Punkte am Anfang und am Ende eines Bahnsegments angegeben. Die weiteren ein bzw. zwei Kontrollpunkte werden vom Programm entsprechend der bereits bekannten Punkte ermittelt.</p>
 <p>Wenn zur Laufzeit des Programmes ein neues Kurvenelement erzeugt werden soll, werden diese Punkte dem Element übergeben.</p>
 <pre><code class="language-java">public CurveForm(
@@ -370,7 +372,8 @@ void main(){
 <div style="break-before: page; page-break-before: always;"></div><h3 id="31-anwendung-1"><a class="header" href="#31-anwendung-1">3.1 Anwendung</a></h3>
 <p>Wie schon bereits in <a href="chapter_3/../chapter_1/WoFindetManBezierkurven.html">1.2</a> beschrieben, nutzt das Schulprojekt Railway aus dem Informatikprojekt Bezierkurven um Kurven in Bahnlinien zu erstellen darzustellen. Hierzu wird je nach Type (Kurve oder Versatz) eine Bezierkurve dritten oder vierten Grades erstellt. </p>
 <p><img src="chapter_3/../img/RailwayBezierPoints.png" alt="Bezierkurve 3ten und 4ten Grades in Railway" /></p>
-<p style="text-align: center; font-size: 1.6rem;">Bild 3.1.1 Bezierkurven Grad 3 und 4 in Railway{A15}</p>
+<p style="text-align: center; font-size: 1.6rem;">Bild 3.1.1 Bezierkurven Grad 3 und 4 in Railway</p>
+<p>Railway<a href="chapter_3/../links.html#a15">\(^{A15}\)</a></p>
 <p>Die Strecke wird durch festgelegte Punkte am Anfang und am Ende eines Bahnsegments angegeben. Die weiteren ein bzw. zwei Kontrollpunkte werden vom Programm entsprechend der bereits bekannten Punkte ermittelt.</p>
 <p>Wenn zur Laufzeit des Programmes ein neues Kurvenelement erzeugt werden soll, werden diese Punkte dem Element übergeben.</p>
 <pre><code class="language-java">public CurveForm(
@@ -468,7 +471,7 @@ void main(){
 <p>Beim vorangegangenen Ansatz aus <a href="chapter_3/./Anwendung.html">3.1</a> wird die gesamte Arbeit der Bestimmung der Bezierkurve auf Seiten der CPU im vornerein berechnet und die Grafikkarte ausgehebelt, indem nur noch Linien gezeichnet werden. Dieses Vorgehen ist ungenau, da der Casteljau Algorithmus nur eine Annäherung der Kurve berechnet. Dies zeigt sich insbesondere an den Ecken der Kurven, welche auf Grund der ungleichen Verteilung der von \(t\) abhängigen Punkte auf der Kurve sehr harte Stufenübergänge erhalten. </p>
 <p><img src="chapter_3/../img/RailwayEdgeDistortion.png" alt="Ecken ungenauigkeit bei Bezierkurven" /></p>
 <p style="text-align: center; font-size: 1.6rem;">Bild 3.2.1 Ecken Ungenauigkeit bei Bezierkurven</p>
-<p>Auch die Verwendung von Antialiasing{A17}, um diese Ungenauigkeiten zu verblenden, ist aufgrund des Entstehen von Überlappung der Linien nur unter hohem Aufwand möglich. </p>
+<p>Auch die Verwendung von Antialiasing<a href="chapter_3/../links.html#a17">\(^{A17}\)</a>, um diese Ungenauigkeiten zu verblenden, ist aufgrund des Entstehen von Überlappung der Linien nur unter hohem Aufwand möglich. </p>
 <p>Ein möglicher Lösungsansatz wäre es, die Berechnung der Kurve auf die GPU zu verlagern und dort nach dem De Casteljau Algorithmus für verschiedene \(t\) die Nähe des gerade zu berechnenden Pixels zu ermitteln, um so die Kurve darzustellen. Dies hätte den Vorteil, dass man auch im Nachhinein noch die Position der Kontrollpunkte verändern könnte, sowie basierend auf der Nähe zum berechneten \(t\) auch eine Form des Antialiasing anwenden könnte um harte Übergänge zu vermeiden.</p>
 <pre><code class="language-cpp">#type fragment
 #version 330 core
@@ -494,8 +497,6 @@ vec3 colorBezier(vec2 pixelCoord, vec2 pos1, vec2 pos2, vec2 pos3, vec3 baseColo
             color = bezierColor;
         }
     }
-
-
     return color;
 }
 vec3 pointDraw(vec2 pixelCoord, vec2 pos, vec3 baseColor, vec3 pointColor){...}//SDFCircleFunc
@@ -553,7 +554,7 @@ $$ B_{y3}(t) = (1-t)^2y_{0} + 2(1-t)ty_{1} + t^2y_{2} $$</p>
 <p>Für die \(x\) und \(y\) Komponente ergeben sich somit insgesamt zwischen 0 und 4 Lösungen \(\{t_{x1},t_{x2},t_{y1},t_{y2}\}\). 
 Sind jetzt ein t von x und ein t von y gleich, so liegt \(T\) auf der Kurve. Die kleinste Differenz von x und y gibt also die Nähe des Punktes zur Kurve an.</p>
 <p><img src="chapter_3/../img/MathematischerAnsatzBeispielkurveTestpunkt.png" alt="alt" /></p>
-<p style="text-align: center; font-size: 1.6rem;">Demo 3.3.1 Testpunkt Nähe zur Kurve{A18}</p>
+<p style="text-align: center; font-size: 1.6rem;">Demo 3.3.1 Testpunkt Nähe zur Kurve</p>
 <style>
     img{
         display: block;
@@ -566,25 +567,62 @@ Sind jetzt ein t von x und ein t von y gleich, so liegt \(T\) auf der Kurve. Die
 <p>$$ t_{1,2} = \frac{-(2P_{1} - 2P_{0}) \pm \sqrt{(2P_{1} - 2P_{0})^2 - 4(P_{0} - 2P_{1} + P_{2})(P_{0} - T)}}{2(P_{0} - 2P_{1} + P_{2})} $$</p>
 <p>Weiterführend zu dieser Arbeit kann nun die obige Formel genutzt werden, um die praktische Implementierung mithilfe eines Shaders durchzuführen.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="anhang"><a class="header" href="#anhang">Anhang</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><p>A1 http://solidmodeling.org/awards/bezier-award/ [05.03.2022 14:22]</p>
-<p>A2 https://archive.ph/20120526012617/http://www.engology.com/eng5bezier.htm#selection-19.206-19.309 [05.03.2022 14:29]</p>
-<p>A3 https://physik.cosmos-indirekt.de/Physik-Schule/Paul_de_Casteljau [05.03.2022 14:51]</p>
-<p>A4 https://www.gimp.org/ [05.03.2022 15:20]</p>
-<p>A5 https://www.getpaint.net/ [05.03.2022 15:31]</p>
-<p>A6 https://logiksim.dbclan.de/download.html [06.03.2022 12:26]</p>
-<p>A7 https://github.com/PixelboysTM/LogikSimClone [06.03.2022 12:22]</p>
-<p>A8 https://docs.microsoft.com/en-us/typography/truetype/ [06.03.2022 12:59]</p>
-<p>A9 https://www.adobe.com/products/type/opentype.html [06.03.2022 13:00]</p>
-<p>A10 https://github.com/PixelboysTM/FacharbeitBezierkurven/blob/e3ed9e8ca87a5df89f1dd44b9265104c4cedf676/pdf/FontRasterizationRogerDHersch.pdf [20.04.2022 17:01]</p>
-<p>A11 https://docs.microsoft.com/en-us/typography/truetype/images/rast-image27.gif [06.03.2022 13:15]</p>
-<p>A12 http://paulbourke.net/miscellaneous/interpolation/ [06.03.2022 14:30]</p>
-<p>A13 https://www.freecodecamp.org/news/nerding-out-with-bezier-curves-6e3c0bc48e2f/ [13.03.2022 19:03]</p>
-<p>A14 https://unity.com/ [13.03.2022 19:03]</p>
-<p>A15 Ka quelle zu mir selbst oder so ist halt nicht öffentlich der Source Code evtl. der MKG-Seiten Beitrag?</p>
-<p>A16 https://www.microsoft.com/en-us/microsoft-365/word [13.03.2022 19:19]</p>
-<p>A17 https://helpx.adobe.com/photoshop-elements/key-concepts/aliasing-anti-aliasing.html [26.03.2022 11:19]</p>
-<p>A18 https://www.desmos.com/calculator/4sabernbxy [04.04.2022 17:32]</p>
-<p>A19 https://de.serlo.org/mathe/1549/mitternachtsformel-quadratische-l%C3%B6sungsformel [20.04.2022 12:05]</p>
+<div style="break-before: page; page-break-before: always;"></div><h5 id="a1"><a class="header" href="#a1">A1</a></h5>
+<p><a href="http://solidmodeling.org/awards/bezier-award/">http://solidmodeling.org/awards/bezier-award/</a> <br />
+[05.03.2022 14:22]</p>
+<h5 id="a2"><a class="header" href="#a2">A2</a></h5>
+<p><a href="https://archive.ph/20120526012617/http://www.engology.com/eng5bezier.htm#selection-19.206-19.309">https://archive.ph/20120526012617/http://www.engology.com/eng5bezier.htm#selection-19.206-19.309</a> <br />
+[05.03.2022 14:29]</p>
+<h5 id="a3"><a class="header" href="#a3">A3</a></h5>
+<p><a href="https://physik.cosmos-indirekt.de/Physik-Schule/Paul_de_Casteljau">https://physik.cosmos-indirekt.de/Physik-Schule/Paul_de_Casteljau</a> <br />
+[05.03.2022 14:51]</p>
+<h5 id="a4"><a class="header" href="#a4">A4</a></h5>
+<p><a href="https://www.gimp.org/">https://www.gimp.org/</a> <br />
+[05.03.2022 15:20]</p>
+<h5 id="a5"><a class="header" href="#a5">A5</a></h5>
+<p><a href="https://www.getpaint.net/">https://www.getpaint.net/</a> <br />
+[05.03.2022 15:31]</p>
+<h5 id="a6"><a class="header" href="#a6">A6</a></h5>
+<p><a href="https://logiksim.dbclan.de/download.html">https://logiksim.dbclan.de/download.html</a> <br />
+[06.03.2022 12:26]</p>
+<h5 id="a7"><a class="header" href="#a7">A7</a></h5>
+<p><a href="https://github.com/PixelboysTM/LogikSimClone">https://github.com/PixelboysTM/LogikSimClone</a> <br />
+[06.03.2022 12:22]</p>
+<h5 id="a8"><a class="header" href="#a8">A8</a></h5>
+<p><a href="https://docs.microsoft.com/en-us/typography/truetype/">https://docs.microsoft.com/en-us/typography/truetype/</a> <br />
+[06.03.2022 12:59]</p>
+<h5 id="a9"><a class="header" href="#a9">A9</a></h5>
+<p><a href="https://www.adobe.com/products/type/opentype.html">https://www.adobe.com/products/type/opentype.html</a> <br />
+[06.03.2022 13:00]</p>
+<h5 id="a10"><a class="header" href="#a10">A10</a></h5>
+<p><a href="https://github.com/PixelboysTM/FacharbeitBezierkurven/blob/e3ed9e8ca87a5df89f1dd44b9265104c4cedf676/pdf/FontRasterizationRogerDHersch.pdf">https://github.com/PixelboysTM/FacharbeitBezierkurven/blob/e3ed9e8ca87a5df89f1dd44b9265104c4cedf676/pdf/FontRasterizationRogerDHersch.pdf</a> <br />
+[20.04.2022 17:01]</p>
+<h5 id="a11"><a class="header" href="#a11">A11</a></h5>
+<p><a href="https://docs.microsoft.com/en-us/typography/truetype/images/rast-image27.gif">https://docs.microsoft.com/en-us/typography/truetype/images/rast-image27.gif</a> <br />
+[06.03.2022 13:15]</p>
+<h5 id="a12"><a class="header" href="#a12">A12</a></h5>
+<p><a href="http://paulbourke.net/miscellaneous/interpolation/">http://paulbourke.net/miscellaneous/interpolation/</a> <br />
+[06.03.2022 14:30]</p>
+<h5 id="a13"><a class="header" href="#a13">A13</a></h5>
+<p><a href="https://www.freecodecamp.org/news/nerding-out-with-bezier-curves-6e3c0bc48e2f/">https://www.freecodecamp.org/news/nerding-out-with-bezier-curves-6e3c0bc48e2f/</a> <br />
+[13.03.2022 19:03]</p>
+<h5 id="a14"><a class="header" href="#a14">A14</a></h5>
+<p><a href="https://unity.com/">https://unity.com/</a> <br />
+[13.03.2022 19:03]</p>
+<h5 id="a15"><a class="header" href="#a15">A15</a></h5>
+<p>Informatikprojekt EF/Q1</p>
+<h5 id="a16"><a class="header" href="#a16">A16</a></h5>
+<p><a href="https://www.microsoft.com/en-us/microsoft-365/word">https://www.microsoft.com/en-us/microsoft-365/word</a> <br />
+[13.03.2022 19:19]</p>
+<h5 id="a17"><a class="header" href="#a17">A17</a></h5>
+<p><a href="https://helpx.adobe.com/photoshop-elements/key-concepts/aliasing-anti-aliasing.html">https://helpx.adobe.com/photoshop-elements/key-concepts/aliasing-anti-aliasing.html</a> <br />
+[26.03.2022 11:19]</p>
+<h5 id="a18"><a class="header" href="#a18">A18</a></h5>
+<p><a href="https://www.desmos.com/calculator/4sabernbxy">https://www.desmos.com/calculator/4sabernbxy</a> <br />
+[04.04.2022 17:32]</p>
+<h5 id="a19"><a class="header" href="#a19">A19</a></h5>
+<p><a href="https://de.serlo.org/mathe/1549/mitternachtsformel-quadratische-l%C3%B6sungsformel">https://de.serlo.org/mathe/1549/mitternachtsformel-quadratische-l%C3%B6sungsformel</a> <br />
+[20.04.2022 12:05]</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="weitere-links"><a class="header" href="#weitere-links">Weitere Links</a></h1>
 <p>L1 http://www.jeffreythompson.org/collision-detection/point-circle.php [12.03.2022 13:18]</p>
 <p>https://cubic-bezier.com/#.58,1.35,.54,.33</p>

@@ -1,6 +1,6 @@
 ## 2. Zeichnen von Bezierkurven
 
-Wir haben gesehen, dass Bezierkurven in vielen Bereichen Anwendung finden und jeder von uns sie schon einmal verwendet hat, auch wenn es nur durch das Schreiben eines Textes in Microsoft Word{A16} war. \
+Wir haben gesehen, dass Bezierkurven in vielen Bereichen Anwendung finden und jeder von uns sie schon einmal verwendet hat, auch wenn es nur durch das Schreiben eines Textes in Microsoft Word[\\(^{A16}\\)](../links.md#a16) war. \
  Nun wollen wir jedoch nicht mehr anschauen, wo wir Bezierkurven finden, sondern wir wollen selber Bezierkurven zeichnen. Vorerst wollen wir uns hierzu mit dem De Casteljau's Algorithmus beschäftigen.
 
 ### 2.1 Nutzung des De Casteljau's Algorithmus
@@ -8,7 +8,7 @@ Wir haben gesehen, dass Bezierkurven in vielen Bereichen Anwendung finden und je
 Der nach Paul de Casteljau benannte Algorithmus, ist ein rekursiver Algorithmus zur näherungsweisen Auswertung von Bezierkurven, mithilfe linearer Interpolation. Welche durch theoretische unendliche Verfeinerung die Bezierkurve formt.
 
 > Linear interpolation is the simplest method of getting values at positions in between the data points. The points are simply joined by straight line segments. Each segment (bounded by two data points) can be interpolated independently. The parameter mu defines where to estimate the value on the interpolated line, it is 0 at the first point and 1 and the second point. For interpolated values between the two points mu ranges between 0 and 1. Values of mu outside this range result in extrapolation. \
->-- Paul Bourke{A12}
+>-- Paul Bourke[\\(^{A12}\\)](../links.md#a12)
 
 #### 2.1.1 Beispiel mit zwei Kontrollpunkten
 

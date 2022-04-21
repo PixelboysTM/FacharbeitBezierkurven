@@ -3,7 +3,9 @@
 Wie schon bereits in [1.2](../chapter_1/WoFindetManBezierkurven.md) beschrieben, nutzt das Schulprojekt Railway aus dem Informatikprojekt Bezierkurven um Kurven in Bahnlinien zu erstellen darzustellen. Hierzu wird je nach Type (Kurve oder Versatz) eine Bezierkurve dritten oder vierten Grades erstellt. 
 
 ![Bezierkurve 3ten und 4ten Grades in Railway](../img/RailwayBezierPoints.png)
-<p style="text-align: center; font-size: 1.6rem;">Bild 3.1.1 Bezierkurven Grad 3 und 4 in Railway{A15}</p>
+<p style="text-align: center; font-size: 1.6rem;">Bild 3.1.1 Bezierkurven Grad 3 und 4 in Railway</p>
+
+Railway[\\(^{A15}\\)](../links.md#a15)
 
 Die Strecke wird durch festgelegte Punkte am Anfang und am Ende eines Bahnsegments angegeben. Die weiteren ein bzw. zwei Kontrollpunkte werden vom Programm entsprechend der bereits bekannten Punkte ermittelt.
 

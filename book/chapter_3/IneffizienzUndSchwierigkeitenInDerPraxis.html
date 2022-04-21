@@ -148,7 +148,7 @@
 <p>Beim vorangegangenen Ansatz aus <a href="./Anwendung.html">3.1</a> wird die gesamte Arbeit der Bestimmung der Bezierkurve auf Seiten der CPU im vornerein berechnet und die Grafikkarte ausgehebelt, indem nur noch Linien gezeichnet werden. Dieses Vorgehen ist ungenau, da der Casteljau Algorithmus nur eine Annäherung der Kurve berechnet. Dies zeigt sich insbesondere an den Ecken der Kurven, welche auf Grund der ungleichen Verteilung der von \(t\) abhängigen Punkte auf der Kurve sehr harte Stufenübergänge erhalten. </p>
 <p><img src="../img/RailwayEdgeDistortion.png" alt="Ecken ungenauigkeit bei Bezierkurven" /></p>
 <p style="text-align: center; font-size: 1.6rem;">Bild 3.2.1 Ecken Ungenauigkeit bei Bezierkurven</p>
-<p>Auch die Verwendung von Antialiasing{A17}, um diese Ungenauigkeiten zu verblenden, ist aufgrund des Entstehen von Überlappung der Linien nur unter hohem Aufwand möglich. </p>
+<p>Auch die Verwendung von Antialiasing<a href="../links.html#a17">\(^{A17}\)</a>, um diese Ungenauigkeiten zu verblenden, ist aufgrund des Entstehen von Überlappung der Linien nur unter hohem Aufwand möglich. </p>
 <p>Ein möglicher Lösungsansatz wäre es, die Berechnung der Kurve auf die GPU zu verlagern und dort nach dem De Casteljau Algorithmus für verschiedene \(t\) die Nähe des gerade zu berechnenden Pixels zu ermitteln, um so die Kurve darzustellen. Dies hätte den Vorteil, dass man auch im Nachhinein noch die Position der Kontrollpunkte verändern könnte, sowie basierend auf der Nähe zum berechneten \(t\) auch eine Form des Antialiasing anwenden könnte um harte Übergänge zu vermeiden.</p>
 <pre><code class="language-cpp">#type fragment
 #version 330 core
@@ -174,8 +174,6 @@ vec3 colorBezier(vec2 pixelCoord, vec2 pos1, vec2 pos2, vec2 pos3, vec3 baseColo
             color = bezierColor;
         }
     }
-
-
     return color;
 }
 vec3 pointDraw(vec2 pixelCoord, vec2 pos, vec3 baseColor, vec3 pointColor){...}//SDFCircleFunc

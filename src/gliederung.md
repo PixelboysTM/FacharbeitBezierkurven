@@ -12,7 +12,7 @@
 ### [4. Zussamenfassung](chapter_4.md)
 
 ### [5. Anhang](chapter_5.md)
-&nbsp;&nbsp;&nbsp;&nbsp;[5.1 Literaturangabe](chapter_5/Literaturangabe.md) \
-&nbsp;&nbsp;&nbsp;&nbsp;[5.2 Weitere Links](chapter_5/WeitereLinks.md) [Zu Videos Animationen etc. ? Muss dass ins Literatur Verzeicnis?] \
+&nbsp;&nbsp;&nbsp;&nbsp;[5.1 Literaturangabe](./links.md) \
+&nbsp;&nbsp;&nbsp;&nbsp;[5.2 Weitere Links](chapter_5/WeitereLinks.md) \
 &nbsp;&nbsp;&nbsp;&nbsp;[5.3 Code](chapter_5/Code.md) \
 &nbsp;&nbsp;&nbsp;&nbsp;[5.4 Demos](chapter_5/Demos.md)
