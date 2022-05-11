@@ -12,7 +12,7 @@
   - [Anwendung](chapter_3/Anwendung.md)
   - [Ineffizienz und Schwierigkeiten in der Praxis](chapter_3/IneffizienzUndSchwierigkeitenInDerPraxis.md)
   - [Mathematischer Lösungsansatz](chapter_3/MathematischerLoesungsansatz.md)
-- [Zussamenfassung](./chapter_4.md)
+- [Zusammenfassung](./chapter_4.md)
 
 ---
 
